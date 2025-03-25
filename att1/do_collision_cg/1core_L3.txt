@@ -1,0 +1,439 @@
+2025-03-25 15:05:03 - 
+2025-03-25 15:05:03 - =========================( Parsing command line arguments )=========================
+2025-03-25 15:05:03 - 
+2025-03-25 15:05:03 - All paths relative to input file subdirectory <../tests/perf/cg/scenario/cg/>
+2025-03-25 15:05:03 - Input file = <../tests/perf/cg/scenario/cg/input_1core>
+2025-03-25 15:05:03 - File tag = <default>
+2025-03-25 15:05:03 - From now on logging to file <LOG_1core>
+Region: Compute
+Group: 1
++-------------------------+---------+-------------+
+|          Event          | Counter |  f0644:0:0  |
++-------------------------+---------+-------------+
+|   Runtime (RDTSC) [s]   |   TSC   |    4.939508 |
+|       Region calls      |   CTR   |           1 |
+|    INSTR_RETIRED_ANY    |  FIXC0  | 23158120000 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  | 10230340000 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  | 10122320000 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 51151720000 |
+|     L2_LINES_IN_ALL     |   PMC0  |  1013608000 |
+|      L2_TRANS_L2_WB     |   PMC1  |  1007624000 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |     5957909 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |  1007628000 |
++-------------------------+---------+-------------+
+
++-----------------------------------+------------+
+|               Metric              |  f0644:0:0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     4.9395 |
+|        Runtime unhalted [s]       |     4.2728 |
+|            Clock [MHz]            |  2419.8676 |
+|                CPI                |     0.4418 |
+|    L3 load bandwidth [MBytes/s]   | 13133.0716 |
+|    L3 load data volume [GBytes]   |    64.8709 |
+|   L3 evict bandwidth [MBytes/s]   | 13055.5902 |
+|   L3 evict data volume [GBytes]   |    64.4882 |
+| L3|MEM evict bandwidth [MBytes/s] | 13055.5383 |
+| L3|MEM evict data volume [GBytes] |    64.4879 |
+|  Dropped CLs bandwidth [MBytes/s] |    77.1952 |
+|  Dropped CLs data volume [GBytes] |     0.3813 |
+|      L3 bandwidth [MBytes/s]      | 26188.6099 |
+|      L3 data volume [GBytes]      |   129.3588 |
++-----------------------------------+------------+
+
+Region: do_collision_cg_OUTER
+Group: 1
++-------------------------+---------+-------------+
+|          Event          | Counter |  f0644:0:0  |
++-------------------------+---------+-------------+
+|   Runtime (RDTSC) [s]   |   TSC   |     3.06452 |
+|       Region calls      |   CTR   |         200 |
+|    INSTR_RETIRED_ANY    |  FIXC0  | 15422720000 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  |  6537652000 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  |  6468429000 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 32688260000 |
+|     L2_LINES_IN_ALL     |   PMC0  |   681422000 |
+|      L2_TRANS_L2_WB     |   PMC1  |   677633400 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |     3775350 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |   677635900 |
++-------------------------+---------+-------------+
+
++-----------------------------------+------------+
+|               Metric              |  f0644:0:0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     3.0645 |
+|        Runtime unhalted [s]       |     2.7305 |
+|            Clock [MHz]            |  2419.9399 |
+|                CPI                |     0.4239 |
+|    L3 load bandwidth [MBytes/s]   | 14230.9425 |
+|    L3 load data volume [GBytes]   |    43.6110 |
+|   L3 evict bandwidth [MBytes/s]   | 14151.8729 |
+|   L3 evict data volume [GBytes]   |    43.3687 |
+| L3|MEM evict bandwidth [MBytes/s] | 14151.8207 |
+| L3|MEM evict data volume [GBytes] |    43.3685 |
+|  Dropped CLs bandwidth [MBytes/s] |    78.8451 |
+|  Dropped CLs data volume [GBytes] |     0.2416 |
+|      L3 bandwidth [MBytes/s]      | 28382.7632 |
+|      L3 data volume [GBytes]      |    86.9795 |
++-----------------------------------+------------+
+
+Region: do_collision_cg_PHASE1
+Group: 1
++-------------------------+---------+-----------+
+|          Event          | Counter | f0644:0:0 |
++-------------------------+---------+-----------+
+|   Runtime (RDTSC) [s]   |   TSC   |  0.016006 |
+|       Region calls      |   CTR   |       200 |
+|    INSTR_RETIRED_ANY    |  FIXC0  |  71930100 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  |  40512600 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  |  40077310 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 202563000 |
+|     L2_LINES_IN_ALL     |   PMC0  |   3704713 |
+|      L2_TRANS_L2_WB     |   PMC1  |   3521294 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |    182318 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |   3521576 |
++-------------------------+---------+-----------+
+
++-----------------------------------+------------+
+|               Metric              |  f0644:0:0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     0.0160 |
+|        Runtime unhalted [s]       |     0.0169 |
+|            Clock [MHz]            |  2420.3220 |
+|                CPI                |     0.5632 |
+|    L3 load bandwidth [MBytes/s]   | 14813.2970 |
+|    L3 load data volume [GBytes]   |     0.2371 |
+|   L3 evict bandwidth [MBytes/s]   | 14081.0236 |
+|   L3 evict data volume [GBytes]   |     0.2254 |
+| L3|MEM evict bandwidth [MBytes/s] | 14079.8960 |
+| L3|MEM evict data volume [GBytes] |     0.2254 |
+|  Dropped CLs bandwidth [MBytes/s] |   728.9986 |
+|  Dropped CLs data volume [GBytes] |     0.0117 |
+|      L3 bandwidth [MBytes/s]      | 28893.1931 |
+|      L3 data volume [GBytes]      |     0.4625 |
++-----------------------------------+------------+
+
+Region: do_collision_cg_PHASE2
+Group: 1
++-------------------------+---------+------------+
+|          Event          | Counter |  f0644:0:0 |
++-------------------------+---------+------------+
+|   Runtime (RDTSC) [s]   |   TSC   |   0.327404 |
+|       Region calls      |   CTR   |        200 |
+|    INSTR_RETIRED_ANY    |  FIXC0  | 1897921000 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  |  785334800 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  |  776827400 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 3926674000 |
+|     L2_LINES_IN_ALL     |   PMC0  |   71676950 |
+|      L2_TRANS_L2_WB     |   PMC1  |   71148880 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |     526728 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |   71149130 |
++-------------------------+---------+------------+
+
++-----------------------------------+------------+
+|               Metric              |  f0644:0:0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     0.3274 |
+|        Runtime unhalted [s]       |     0.3280 |
+|            Clock [MHz]            |  2420.5380 |
+|                CPI                |     0.4138 |
+|    L3 load bandwidth [MBytes/s]   | 14011.2057 |
+|    L3 load data volume [GBytes]   |     4.5873 |
+|   L3 evict bandwidth [MBytes/s]   | 13908.0290 |
+|   L3 evict data volume [GBytes]   |     4.5535 |
+| L3|MEM evict bandwidth [MBytes/s] | 13907.9801 |
+| L3|MEM evict data volume [GBytes] |     4.5535 |
+|  Dropped CLs bandwidth [MBytes/s] |   102.9633 |
+|  Dropped CLs data volume [GBytes] |     0.0337 |
+|      L3 bandwidth [MBytes/s]      | 27919.1858 |
+|      L3 data volume [GBytes]      |     9.1409 |
++-----------------------------------+------------+
+
+Region: do_collision_cg_PHASE3
+Group: 1
++-------------------------+---------+------------+
+|          Event          | Counter |  f0644:0:0 |
++-------------------------+---------+------------+
+|   Runtime (RDTSC) [s]   |   TSC   |   0.313455 |
+|       Region calls      |   CTR   |        200 |
+|    INSTR_RETIRED_ANY    |  FIXC0  | 1465286000 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  |  755777900 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  |  748704000 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 3778890000 |
+|     L2_LINES_IN_ALL     |   PMC0  |   48268230 |
+|      L2_TRANS_L2_WB     |   PMC1  |   47777980 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |     489185 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |   47778270 |
++-------------------------+---------+------------+
+
++-----------------------------------+------------+
+|               Metric              |  f0644:0:0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     0.3135 |
+|        Runtime unhalted [s]       |     0.3157 |
+|            Clock [MHz]            |  2416.9387 |
+|                CPI                |     0.5158 |
+|    L3 load bandwidth [MBytes/s]   |  9855.2160 |
+|    L3 load data volume [GBytes]   |     3.0892 |
+|   L3 evict bandwidth [MBytes/s]   |  9755.1779 |
+|   L3 evict data volume [GBytes]   |     3.0578 |
+| L3|MEM evict bandwidth [MBytes/s] |  9755.1187 |
+| L3|MEM evict data volume [GBytes] |     3.0578 |
+|  Dropped CLs bandwidth [MBytes/s] |    99.8799 |
+|  Dropped CLs data volume [GBytes] |     0.0313 |
+|      L3 bandwidth [MBytes/s]      | 19610.3346 |
+|      L3 data volume [GBytes]      |     6.1470 |
++-----------------------------------+------------+
+
+Region: do_collision_cg_PHASE4
+Group: 1
++-------------------------+---------+------------+
+|          Event          | Counter |  f0644:0:0 |
++-------------------------+---------+------------+
+|   Runtime (RDTSC) [s]   |   TSC   |   0.304355 |
+|       Region calls      |   CTR   |        200 |
+|    INSTR_RETIRED_ANY    |  FIXC0  | 1827065000 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  |  735484400 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  |  726999700 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 3677422000 |
+|     L2_LINES_IN_ALL     |   PMC0  |  107067200 |
+|      L2_TRANS_L2_WB     |   PMC1  |  106577800 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |     488134 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |  106578100 |
++-------------------------+---------+------------+
+
++-----------------------------------+------------+
+|               Metric              |  f0644:0:0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     0.3044 |
+|        Runtime unhalted [s]       |     0.3072 |
+|            Clock [MHz]            |  2422.2604 |
+|                CPI                |     0.4025 |
+|    L3 load bandwidth [MBytes/s]   | 22514.1719 |
+|    L3 load data volume [GBytes]   |     6.8523 |
+|   L3 evict bandwidth [MBytes/s]   | 22411.3236 |
+|   L3 evict data volume [GBytes]   |     6.8210 |
+| L3|MEM evict bandwidth [MBytes/s] | 22411.2605 |
+| L3|MEM evict data volume [GBytes] |     6.8210 |
+|  Dropped CLs bandwidth [MBytes/s] |   102.6452 |
+|  Dropped CLs data volume [GBytes] |     0.0312 |
+|      L3 bandwidth [MBytes/s]      | 44925.4325 |
+|      L3 data volume [GBytes]      |    13.6733 |
++-----------------------------------+------------+
+
+Region: do_collision_cg_PHASE5
+Group: 1
++-------------------------+---------+-------------+
+|          Event          | Counter |  f0644:0:0  |
++-------------------------+---------+-------------+
+|   Runtime (RDTSC) [s]   |   TSC   |    0.888247 |
+|       Region calls      |   CTR   |         200 |
+|    INSTR_RETIRED_ANY    |  FIXC0  |  4697897000 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  |  2138733000 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  |  2114695000 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 10693670000 |
+|     L2_LINES_IN_ALL     |   PMC0  |   297064900 |
+|      L2_TRANS_L2_WB     |   PMC1  |   296414600 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |      647550 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |   296414900 |
++-------------------------+---------+-------------+
+
++-----------------------------------+------------+
+|               Metric              |  f0644:0:0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     0.8882 |
+|        Runtime unhalted [s]       |     0.8933 |
+|            Clock [MHz]            |  2421.5332 |
+|                CPI                |     0.4553 |
+|    L3 load bandwidth [MBytes/s]   | 21404.1293 |
+|    L3 load data volume [GBytes]   |    19.0122 |
+|   L3 evict bandwidth [MBytes/s]   | 21357.2954 |
+|   L3 evict data volume [GBytes]   |    18.9706 |
+| L3|MEM evict bandwidth [MBytes/s] | 21357.2738 |
+| L3|MEM evict data volume [GBytes] |    18.9705 |
+|  Dropped CLs bandwidth [MBytes/s] |    46.6573 |
+|  Dropped CLs data volume [GBytes] |     0.0414 |
+|      L3 bandwidth [MBytes/s]      | 42761.4031 |
+|      L3 data volume [GBytes]      |    37.9827 |
++-----------------------------------+------------+
+
+Region: do_collision_cg_PHASE6
+Group: 1
++-------------------------+---------+------------+
+|          Event          | Counter |  f0644:0:0 |
++-------------------------+---------+------------+
+|   Runtime (RDTSC) [s]   |   TSC   |   0.211081 |
+|       Region calls      |   CTR   |        200 |
+|    INSTR_RETIRED_ANY    |  FIXC0  | 1598396000 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  |  509718500 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  |  504472300 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 2548593000 |
+|     L2_LINES_IN_ALL     |   PMC0  |   47142680 |
+|      L2_TRANS_L2_WB     |   PMC1  |   46679820 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |     460771 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |   46680130 |
++-------------------------+---------+------------+
+
++-----------------------------------+------------+
+|               Metric              |  f0644:0:0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     0.2111 |
+|        Runtime unhalted [s]       |     0.2129 |
+|            Clock [MHz]            |  2419.2161 |
+|                CPI                |     0.3189 |
+|    L3 load bandwidth [MBytes/s]   | 14293.7144 |
+|    L3 load data volume [GBytes]   |     3.0171 |
+|   L3 evict bandwidth [MBytes/s]   | 14153.4687 |
+|   L3 evict data volume [GBytes]   |     2.9875 |
+| L3|MEM evict bandwidth [MBytes/s] | 14153.3747 |
+| L3|MEM evict data volume [GBytes] |     2.9875 |
+|  Dropped CLs bandwidth [MBytes/s] |   139.7063 |
+|  Dropped CLs data volume [GBytes] |     0.0295 |
+|      L3 bandwidth [MBytes/s]      | 28447.0890 |
+|      L3 data volume [GBytes]      |     6.0046 |
++-----------------------------------+------------+
+
+Region: do_collision_cg_PHASE7
+Group: 1
++-------------------------+---------+-----------+
+|          Event          | Counter | f0644:0:0 |
++-------------------------+---------+-----------+
+|   Runtime (RDTSC) [s]   |   TSC   |  0.071736 |
+|       Region calls      |   CTR   |       200 |
+|    INSTR_RETIRED_ANY    |  FIXC0  | 599289700 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  | 174682500 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  | 172903300 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 873412700 |
+|     L2_LINES_IN_ALL     |   PMC0  |   9332155 |
+|      L2_TRANS_L2_WB     |   PMC1  |   8941760 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |    388701 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |   8942100 |
++-------------------------+---------+-----------+
+
++-----------------------------------+------------+
+|               Metric              |  f0644:0:0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     0.0717 |
+|        Runtime unhalted [s]       |     0.0730 |
+|            Clock [MHz]            |  2418.9546 |
+|                CPI                |     0.2915 |
+|    L3 load bandwidth [MBytes/s]   |  8325.7767 |
+|    L3 load data volume [GBytes]   |     0.5973 |
+|   L3 evict bandwidth [MBytes/s]   |  7977.7852 |
+|   L3 evict data volume [GBytes]   |     0.5723 |
+| L3|MEM evict bandwidth [MBytes/s] |  7977.4819 |
+| L3|MEM evict data volume [GBytes] |     0.5723 |
+|  Dropped CLs bandwidth [MBytes/s] |   346.7835 |
+|  Dropped CLs data volume [GBytes] |     0.0249 |
+|      L3 bandwidth [MBytes/s]      | 16303.2586 |
+|      L3 data volume [GBytes]      |     1.1695 |
++-----------------------------------+------------+
+
+Region: compute_density_momentum_OUTER
+Group: 1
++-------------------------+---------+------------+
+|          Event          | Counter |  f0644:0:0 |
++-------------------------+---------+------------+
+|   Runtime (RDTSC) [s]   |   TSC   |   0.541628 |
+|       Region calls      |   CTR   |        400 |
+|    INSTR_RETIRED_ANY    |  FIXC0  | 1890233000 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  |  844769800 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  |  836438800 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 4223849000 |
+|     L2_LINES_IN_ALL     |   PMC0  |   54625190 |
+|      L2_TRANS_L2_WB     |   PMC1  |   53688490 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |     933142 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |   53689110 |
++-------------------------+---------+------------+
+
++-----------------------------------+------------+
+|               Metric              |  f0644:0:0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     0.5416 |
+|        Runtime unhalted [s]       |     0.3528 |
+|            Clock [MHz]            |  2418.1643 |
+|                CPI                |     0.4469 |
+|    L3 load bandwidth [MBytes/s]   |  6454.6371 |
+|    L3 load data volume [GBytes]   |     3.4960 |
+|   L3 evict bandwidth [MBytes/s]   |  6344.0277 |
+|   L3 evict data volume [GBytes]   |     3.4361 |
+| L3|MEM evict bandwidth [MBytes/s] |  6343.9544 |
+| L3|MEM evict data volume [GBytes] |     3.4361 |
+|  Dropped CLs bandwidth [MBytes/s] |   110.2622 |
+|  Dropped CLs data volume [GBytes] |     0.0597 |
+|      L3 bandwidth [MBytes/s]      | 12798.5915 |
+|      L3 data volume [GBytes]      |     6.9321 |
++-----------------------------------+------------+
+
+Region: compute_density_momentum_LOOP
+Group: 1
++-------------------------+---------+------------+
+|          Event          | Counter |  f0644:0:0 |
++-------------------------+---------+------------+
+|   Runtime (RDTSC) [s]   |   TSC   |   0.342561 |
+|       Region calls      |   CTR   |        400 |
+|    INSTR_RETIRED_ANY    |  FIXC0  | 1871856000 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  |  828492000 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  |  820314200 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 4142460000 |
+|     L2_LINES_IN_ALL     |   PMC0  |   54430840 |
+|      L2_TRANS_L2_WB     |   PMC1  |   53496400 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |     931124 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |   53496990 |
++-------------------------+---------+------------+
+
++-----------------------------------+------------+
+|               Metric              |  f0644:0:0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     0.3426 |
+|        Runtime unhalted [s]       |     0.3460 |
+|            Clock [MHz]            |  2418.1859 |
+|                CPI                |     0.4426 |
+|    L3 load bandwidth [MBytes/s]   | 10169.2071 |
+|    L3 load data volume [GBytes]   |     3.4836 |
+|   L3 evict bandwidth [MBytes/s]   |  9994.7378 |
+|   L3 evict data volume [GBytes]   |     3.4238 |
+| L3|MEM evict bandwidth [MBytes/s] |  9994.6275 |
+| L3|MEM evict data volume [GBytes] |     3.4238 |
+|  Dropped CLs bandwidth [MBytes/s] |   173.9601 |
+|  Dropped CLs data volume [GBytes] |     0.0596 |
+|      L3 bandwidth [MBytes/s]      | 20163.8346 |
+|      L3 data volume [GBytes]      |     6.9073 |
++-----------------------------------+------------+
+
+Region: compute_density_momentum_PEEL
+Group: 1
++-------------------------+---------+-----------+
+|          Event          | Counter | f0644:0:0 |
++-------------------------+---------+-----------+
+|   Runtime (RDTSC) [s]   |   TSC   |  0.000907 |
+|       Region calls      |   CTR   |       400 |
+|    INSTR_RETIRED_ANY    |  FIXC0  |   6714807 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  |   5677380 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  |   5618496 |
+|      TOPDOWN_SLOTS      |  FIXC3  |  28386900 |
+|     L2_LINES_IN_ALL     |   PMC0  |    110126 |
+|      L2_TRANS_L2_WB     |   PMC1  |    109210 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |       854 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |    109229 |
++-------------------------+---------+-----------+
+
++-----------------------------------+------------+
+|               Metric              |  f0644:0:0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     0.0009 |
+|        Runtime unhalted [s]       |     0.0024 |
+|            Clock [MHz]            |  2419.4101 |
+|                CPI                |     0.8455 |
+|    L3 load bandwidth [MBytes/s]   |  7770.7431 |
+|    L3 load data volume [GBytes]   |     0.0070 |
+|   L3 evict bandwidth [MBytes/s]   |  7707.4487 |
+|   L3 evict data volume [GBytes]   |     0.0070 |
+| L3|MEM evict bandwidth [MBytes/s] |  7706.1080 |
+| L3|MEM evict data volume [GBytes] |     0.0070 |
+|  Dropped CLs bandwidth [MBytes/s] |    60.2602 |
+|  Dropped CLs data volume [GBytes] |     0.0001 |
+|      L3 bandwidth [MBytes/s]      | 15476.8512 |
+|      L3 data volume [GBytes]      |     0.0140 |
++-----------------------------------+------------+
+

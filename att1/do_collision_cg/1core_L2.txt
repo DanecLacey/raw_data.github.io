@@ -1,0 +1,379 @@
+2025-03-25 15:04:53 - 
+2025-03-25 15:04:53 - =========================( Parsing command line arguments )=========================
+2025-03-25 15:04:53 - 
+2025-03-25 15:04:53 - All paths relative to input file subdirectory <../tests/perf/cg/scenario/cg/>
+2025-03-25 15:04:53 - Input file = <../tests/perf/cg/scenario/cg/input_1core>
+2025-03-25 15:04:53 - File tag = <default>
+2025-03-25 15:04:53 - From now on logging to file <LOG_1core>
+Region: Compute
+Group: 1
++-----------------------+---------+-------------+
+|         Event         | Counter |  f0644:0:0  |
++-----------------------+---------+-------------+
+|  Runtime (RDTSC) [s]  |   TSC   |    4.919743 |
+|      Region calls     |   CTR   |           1 |
+|   INSTR_RETIRED_ANY   |  FIXC0  | 23157450000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 10196170000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 10196180000 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 50980850000 |
+|    L1D_REPLACEMENT    |   PMC0  |  1292482000 |
+|    L2_TRANS_L1D_WB    |   PMC1  |   498461700 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |     4882333 |
++-----------------------+---------+-------------+
+
++--------------------------------+------------+
+|             Metric             |  f0644:0:0 |
++--------------------------------+------------+
+|       Runtime (RDTSC) [s]      |     4.9197 |
+|      Runtime unhalted [s]      |     4.2585 |
+|           Clock [MHz]          |  2394.3270 |
+|               CPI              |     0.4403 |
+|  L2D load bandwidth [MBytes/s] | 16813.6523 |
+|  L2D load data volume [GBytes] |    82.7188 |
+| L2D evict bandwidth [MBytes/s] |  6484.3934 |
+| L2D evict data volume [GBytes] |    31.9015 |
+|     L2 bandwidth [MBytes/s]    | 23361.5589 |
+|     L2 data volume [GBytes]    |   114.9329 |
++--------------------------------+------------+
+
+Region: do_collision_cg_OUTER
+Group: 1
++-----------------------+---------+-------------+
+|         Event         | Counter |  f0644:0:0  |
++-----------------------+---------+-------------+
+|  Runtime (RDTSC) [s]  |   TSC   |    3.066491 |
+|      Region calls     |   CTR   |         200 |
+|   INSTR_RETIRED_ANY   |  FIXC0  | 15422350000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  6535797000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  6535810000 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 32678990000 |
+|    L1D_REPLACEMENT    |   PMC0  |   870442300 |
+|    L2_TRANS_L1D_WB    |   PMC1  |   294748000 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |     2548889 |
++-----------------------+---------+-------------+
+
++--------------------------------+------------+
+|             Metric             |  f0644:0:0 |
++--------------------------------+------------+
+|       Runtime (RDTSC) [s]      |     3.0665 |
+|      Runtime unhalted [s]      |     2.7297 |
+|           Clock [MHz]          |  2394.3246 |
+|               CPI              |     0.4238 |
+|  L2D load bandwidth [MBytes/s] | 18166.7930 |
+|  L2D load data volume [GBytes] |    55.7083 |
+| L2D evict bandwidth [MBytes/s] |  6151.6150 |
+| L2D evict data volume [GBytes] |    18.8639 |
+|     L2 bandwidth [MBytes/s]    | 24371.6052 |
+|     L2 data volume [GBytes]    |    74.7353 |
++--------------------------------+------------+
+
+Region: do_collision_cg_PHASE1
+Group: 1
++-----------------------+---------+-----------+
+|         Event         | Counter | f0644:0:0 |
++-----------------------+---------+-----------+
+|  Runtime (RDTSC) [s]  |   TSC   |  0.016752 |
+|      Region calls     |   CTR   |       200 |
+|   INSTR_RETIRED_ANY   |  FIXC0  |  71910910 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  41484230 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  41483140 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 207421200 |
+|    L1D_REPLACEMENT    |   PMC0  |   4728565 |
+|    L2_TRANS_L1D_WB    |   PMC1  |   2322093 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |    161796 |
++-----------------------+---------+-----------+
+
++--------------------------------+------------+
+|             Metric             |  f0644:0:0 |
++--------------------------------+------------+
+|       Runtime (RDTSC) [s]      |     0.0168 |
+|      Runtime unhalted [s]      |     0.0173 |
+|           Clock [MHz]          |  2394.3923 |
+|               CPI              |     0.5769 |
+|  L2D load bandwidth [MBytes/s] | 18065.1958 |
+|  L2D load data volume [GBytes] |     0.3026 |
+| L2D evict bandwidth [MBytes/s] |  8871.4155 |
+| L2D evict data volume [GBytes] |     0.1486 |
+|     L2 bandwidth [MBytes/s]    | 27554.7431 |
+|     L2 data volume [GBytes]    |     0.4616 |
++--------------------------------+------------+
+
+Region: do_collision_cg_PHASE2
+Group: 1
++-----------------------+---------+------------+
+|         Event         | Counter |  f0644:0:0 |
++-----------------------+---------+------------+
+|  Runtime (RDTSC) [s]  |   TSC   |    0.33763 |
+|      Region calls     |   CTR   |        200 |
+|   INSTR_RETIRED_ANY   |  FIXC0  | 1897903000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  800557600 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  800557000 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 4002788000 |
+|    L1D_REPLACEMENT    |   PMC0  |   72334170 |
+|    L2_TRANS_L1D_WB    |   PMC1  |   45177520 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |     251752 |
++-----------------------+---------+------------+
+
++--------------------------------+------------+
+|             Metric             |  f0644:0:0 |
++--------------------------------+------------+
+|       Runtime (RDTSC) [s]      |     0.3376 |
+|      Runtime unhalted [s]      |     0.3344 |
+|           Clock [MHz]          |  2394.3311 |
+|               CPI              |     0.4218 |
+|  L2D load bandwidth [MBytes/s] | 13711.4204 |
+|  L2D load data volume [GBytes] |     4.6294 |
+| L2D evict bandwidth [MBytes/s] |  8563.6978 |
+| L2D evict data volume [GBytes] |     2.8914 |
+|     L2 bandwidth [MBytes/s]    | 22322.8395 |
+|     L2 data volume [GBytes]    |     7.5369 |
++--------------------------------+------------+
+
+Region: do_collision_cg_PHASE3
+Group: 1
++-----------------------+---------+------------+
+|         Event         | Counter |  f0644:0:0 |
++-----------------------+---------+------------+
+|  Runtime (RDTSC) [s]  |   TSC   |   0.315771 |
+|      Region calls     |   CTR   |        200 |
+|   INSTR_RETIRED_ANY   |  FIXC0  | 1465266000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  753855400 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  753857600 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 3769277000 |
+|    L1D_REPLACEMENT    |   PMC0  |   66648940 |
+|    L2_TRANS_L1D_WB    |   PMC1  |   22181120 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |     170992 |
++-----------------------+---------+------------+
+
++--------------------------------+------------+
+|             Metric             |  f0644:0:0 |
++--------------------------------+------------+
+|       Runtime (RDTSC) [s]      |     0.3158 |
+|      Runtime unhalted [s]      |     0.3149 |
+|           Clock [MHz]          |  2394.3224 |
+|               CPI              |     0.5145 |
+|  L2D load bandwidth [MBytes/s] | 13508.3087 |
+|  L2D load data volume [GBytes] |     4.2655 |
+| L2D evict bandwidth [MBytes/s] |  4495.6366 |
+| L2D evict data volume [GBytes] |     1.4196 |
+|     L2 bandwidth [MBytes/s]    | 18038.6018 |
+|     L2 data volume [GBytes]    |     5.6961 |
++--------------------------------+------------+
+
+Region: do_collision_cg_PHASE4
+Group: 1
++-----------------------+---------+------------+
+|         Event         | Counter |  f0644:0:0 |
++-----------------------+---------+------------+
+|  Runtime (RDTSC) [s]  |   TSC   |   0.303364 |
+|      Region calls     |   CTR   |        200 |
+|   INSTR_RETIRED_ANY   |  FIXC0  | 1827045000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  725580600 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  725582700 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 3627903000 |
+|    L1D_REPLACEMENT    |   PMC0  |  111007600 |
+|    L2_TRANS_L1D_WB    |   PMC1  |   23331890 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |     172409 |
++-----------------------+---------+------------+
+
++--------------------------------+------------+
+|             Metric             |  f0644:0:0 |
++--------------------------------+------------+
+|       Runtime (RDTSC) [s]      |     0.3034 |
+|      Runtime unhalted [s]      |     0.3030 |
+|           Clock [MHz]          |  2394.3224 |
+|               CPI              |     0.3971 |
+|  L2D load bandwidth [MBytes/s] | 23419.0161 |
+|  L2D load data volume [GBytes] |     7.1045 |
+| L2D evict bandwidth [MBytes/s] |  4922.2748 |
+| L2D evict data volume [GBytes] |     1.4932 |
+|     L2 bandwidth [MBytes/s]    | 28377.6636 |
+|     L2 data volume [GBytes]    |     8.6088 |
++--------------------------------+------------+
+
+Region: do_collision_cg_PHASE5
+Group: 1
++-----------------------+---------+-------------+
+|         Event         | Counter |  f0644:0:0  |
++-----------------------+---------+-------------+
+|  Runtime (RDTSC) [s]  |   TSC   |      0.8872 |
+|      Region calls     |   CTR   |         200 |
+|   INSTR_RETIRED_ANY   |  FIXC0  |  4697877000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  2116575000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  2116575000 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 10582870000 |
+|    L1D_REPLACEMENT    |   PMC0  |   296729700 |
+|    L2_TRANS_L1D_WB    |   PMC1  |    64207440 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |      203360 |
++-----------------------+---------+-------------+
+
++--------------------------------+------------+
+|             Metric             |  f0644:0:0 |
++--------------------------------+------------+
+|       Runtime (RDTSC) [s]      |     0.8872 |
+|      Runtime unhalted [s]      |     0.8840 |
+|           Clock [MHz]          |  2394.3293 |
+|               CPI              |     0.4505 |
+|  L2D load bandwidth [MBytes/s] | 21405.2083 |
+|  L2D load data volume [GBytes] |    18.9907 |
+| L2D evict bandwidth [MBytes/s] |  4631.7360 |
+| L2D evict data volume [GBytes] |     4.1093 |
+|     L2 bandwidth [MBytes/s]    | 26051.6141 |
+|     L2 data volume [GBytes]    |    23.1130 |
++--------------------------------+------------+
+
+Region: do_collision_cg_PHASE6
+Group: 1
++-----------------------+---------+------------+
+|         Event         | Counter |  f0644:0:0 |
++-----------------------+---------+------------+
+|  Runtime (RDTSC) [s]  |   TSC   |   0.227152 |
+|      Region calls     |   CTR   |        200 |
+|   INSTR_RETIRED_ANY   |  FIXC0  | 1598366000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  540902700 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  540902300 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 2704514000 |
+|    L1D_REPLACEMENT    |   PMC0  |   88842560 |
+|    L2_TRANS_L1D_WB    |   PMC1  |   44274770 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |     160961 |
++-----------------------+---------+------------+
+
++--------------------------------+------------+
+|             Metric             |  f0644:0:0 |
++--------------------------------+------------+
+|       Runtime (RDTSC) [s]      |     0.2272 |
+|      Runtime unhalted [s]      |     0.2259 |
+|           Clock [MHz]          |  2394.3311 |
+|               CPI              |     0.3384 |
+|  L2D load bandwidth [MBytes/s] | 25031.3616 |
+|  L2D load data volume [GBytes] |     5.6859 |
+| L2D evict bandwidth [MBytes/s] | 12474.4016 |
+| L2D evict data volume [GBytes] |     2.8336 |
+|     L2 bandwidth [MBytes/s]    | 37551.1139 |
+|     L2 data volume [GBytes]    |     8.5298 |
++--------------------------------+------------+
+
+Region: do_collision_cg_PHASE7
+Group: 1
++-----------------------+---------+-----------+
+|         Event         | Counter | f0644:0:0 |
++-----------------------+---------+-----------+
+|  Runtime (RDTSC) [s]  |   TSC   |  0.072907 |
+|      Region calls     |   CTR   |       200 |
+|   INSTR_RETIRED_ANY   |  FIXC0  | 599270500 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 175462500 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 175464400 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 877312600 |
+|    L1D_REPLACEMENT    |   PMC0  |   9428723 |
+|    L2_TRANS_L1D_WB    |   PMC1  |     52963 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |    173439 |
++-----------------------+---------+-----------+
+
++--------------------------------+-----------+
+|             Metric             | f0644:0:0 |
++--------------------------------+-----------+
+|       Runtime (RDTSC) [s]      |    0.0729 |
+|      Runtime unhalted [s]      |    0.0733 |
+|           Clock [MHz]          | 2394.3034 |
+|               CPI              |    0.2928 |
+|  L2D load bandwidth [MBytes/s] | 8276.8221 |
+|  L2D load data volume [GBytes] |    0.6034 |
+| L2D evict bandwidth [MBytes/s] |   46.4925 |
+| L2D evict data volume [GBytes] |    0.0034 |
+|     L2 bandwidth [MBytes/s]    | 8475.5648 |
+|     L2 data volume [GBytes]    |    0.6179 |
++--------------------------------+-----------+
+
+Region: compute_density_momentum_OUTER
+Group: 1
++-----------------------+---------+------------+
+|         Event         | Counter |  f0644:0:0 |
++-----------------------+---------+------------+
+|  Runtime (RDTSC) [s]  |   TSC   |   0.526607 |
+|      Region calls     |   CTR   |        400 |
+|   INSTR_RETIRED_ANY   |  FIXC0  | 1890010000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  834528200 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  834525800 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 4172641000 |
+|    L1D_REPLACEMENT    |   PMC0  |   56373800 |
+|    L2_TRANS_L1D_WB    |   PMC1  |   15746390 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |    1592893 |
++-----------------------+---------+------------+
+
++--------------------------------+-----------+
+|             Metric             | f0644:0:0 |
++--------------------------------+-----------+
+|       Runtime (RDTSC) [s]      |    0.5266 |
+|      Runtime unhalted [s]      |    0.3485 |
+|           Clock [MHz]          | 2394.3362 |
+|               CPI              |    0.4415 |
+|  L2D load bandwidth [MBytes/s] | 6851.2633 |
+|  L2D load data volume [GBytes] |    3.6079 |
+| L2D evict bandwidth [MBytes/s] | 1913.7022 |
+| L2D evict data volume [GBytes] |    1.0078 |
+|     L2 bandwidth [MBytes/s]    | 8958.5541 |
+|     L2 data volume [GBytes]    |    4.7176 |
++--------------------------------+-----------+
+
+Region: compute_density_momentum_LOOP
+Group: 1
++-----------------------+---------+------------+
+|         Event         | Counter |  f0644:0:0 |
++-----------------------+---------+------------+
+|  Runtime (RDTSC) [s]  |   TSC   |   0.342434 |
+|      Region calls     |   CTR   |        400 |
+|   INSTR_RETIRED_ANY   |  FIXC0  | 1871818000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  818732800 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  818726700 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 4093664000 |
+|    L1D_REPLACEMENT    |   PMC0  |   55951140 |
+|    L2_TRANS_L1D_WB    |   PMC1  |   15515270 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |     361308 |
++-----------------------+---------+------------+
+
++--------------------------------+------------+
+|             Metric             |  f0644:0:0 |
++--------------------------------+------------+
+|       Runtime (RDTSC) [s]      |     0.3424 |
+|      Runtime unhalted [s]      |     0.3419 |
+|           Clock [MHz]          |  2394.3472 |
+|               CPI              |     0.4374 |
+|  L2D load bandwidth [MBytes/s] | 10457.1186 |
+|  L2D load data volume [GBytes] |     3.5809 |
+| L2D evict bandwidth [MBytes/s] |  2899.7625 |
+| L2D evict data volume [GBytes] |     0.9930 |
+|     L2 bandwidth [MBytes/s]    | 13424.4087 |
+|     L2 data volume [GBytes]    |     4.5970 |
++--------------------------------+------------+
+
+Region: compute_density_momentum_PEEL
+Group: 1
++-----------------------+---------+-----------+
+|         Event         | Counter | f0644:0:0 |
++-----------------------+---------+-----------+
+|  Runtime (RDTSC) [s]  |   TSC   |  0.000862 |
+|      Region calls     |   CTR   |       400 |
+|   INSTR_RETIRED_ANY   |  FIXC0  |   6676407 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |   5452769 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |   5446752 |
+|     TOPDOWN_SLOTS     |  FIXC3  |  27263840 |
+|    L1D_REPLACEMENT    |   PMC0  |    195705 |
+|    L2_TRANS_L1D_WB    |   PMC1  |     82887 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |    344969 |
++-----------------------+---------+-----------+
+
++--------------------------------+------------+
+|             Metric             |  f0644:0:0 |
++--------------------------------+------------+
+|       Runtime (RDTSC) [s]      |     0.0009 |
+|      Runtime unhalted [s]      |     0.0023 |
+|           Clock [MHz]          |  2396.9743 |
+|               CPI              |     0.8167 |
+|  L2D load bandwidth [MBytes/s] | 14530.3016 |
+|  L2D load data volume [GBytes] |     0.0125 |
+| L2D evict bandwidth [MBytes/s] |  6154.0232 |
+| L2D evict data volume [GBytes] |     0.0053 |
+|     L2 bandwidth [MBytes/s]    | 46296.8724 |
+|     L2 data volume [GBytes]    |     0.0399 |
++--------------------------------+------------+
+
