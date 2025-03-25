@@ -1,0 +1,231 @@
+2025-03-25 16:05:54 - 
+2025-03-25 16:05:54 - =========================( Parsing command line arguments )=========================
+2025-03-25 16:05:54 - 
+2025-03-25 16:05:54 - All paths relative to input file subdirectory <../tests/perf/lb/scenario/guo/>
+2025-03-25 16:05:54 - Input file = <../tests/perf/lb/scenario/guo/input_1core>
+2025-03-25 16:05:55 - File tag = <default>
+2025-03-25 16:05:55 - From now on logging to file <LOG_1core>
+Region: Compute
+Group: 1
++------------------------------+---------+-------------+
+|             Event            | Counter |  f0644:0:0  |
++------------------------------+---------+-------------+
+|      Runtime (RDTSC) [s]     |   TSC   |    1.651578 |
+|         Region calls         |   CTR   |           1 |
+|       INSTR_RETIRED_ANY      |  FIXC0  |  8438851000 |
+|     CPU_CLK_UNHALTED_CORE    |  FIXC1  |  3256247000 |
+|     CPU_CLK_UNHALTED_REF     |  FIXC2  |  3256244000 |
+|         TOPDOWN_SLOTS        |  FIXC3  | 16281240000 |
+| BR_INST_RETIRED_ALL_BRANCHES |   PMC0  |   536487700 |
+| BR_MISP_RETIRED_ALL_BRANCHES |   PMC1  |      106942 |
++------------------------------+---------+-------------+
+
++----------------------------+--------------+
+|           Metric           |   f0644:0:0  |
++----------------------------+--------------+
+|     Runtime (RDTSC) [s]    |       1.6516 |
+|    Runtime unhalted [s]    |       1.3600 |
+|         Clock [MHz]        |    2394.3049 |
+|             CPI            |       0.3859 |
+|         Branch rate        |       0.0636 |
+|  Branch misprediction rate | 1.267258e-05 |
+| Branch misprediction ratio |       0.0002 |
+|   Instructions per branch  |      15.7298 |
++----------------------------+--------------+
+
+Region: add_source_term_pop_guo_OUTER
+Group: 1
++------------------------------+---------+------------+
+|             Event            | Counter |  f0644:0:0 |
++------------------------------+---------+------------+
+|      Runtime (RDTSC) [s]     |   TSC   |   0.774131 |
+|         Region calls         |   CTR   |        200 |
+|       INSTR_RETIRED_ANY      |  FIXC0  | 4159004000 |
+|     CPU_CLK_UNHALTED_CORE    |  FIXC1  | 1558522000 |
+|     CPU_CLK_UNHALTED_REF     |  FIXC2  | 1558519000 |
+|         TOPDOWN_SLOTS        |  FIXC3  | 7792611000 |
+| BR_INST_RETIRED_ALL_BRANCHES |   PMC0  |   77507440 |
+| BR_MISP_RETIRED_ALL_BRANCHES |   PMC1  |      34158 |
++------------------------------+---------+------------+
+
++----------------------------+--------------+
+|           Metric           |   f0644:0:0  |
++----------------------------+--------------+
+|     Runtime (RDTSC) [s]    |       0.7741 |
+|    Runtime unhalted [s]    |       0.6509 |
+|         Clock [MHz]        |    2394.3073 |
+|             CPI            |       0.3747 |
+|         Branch rate        |       0.0186 |
+|  Branch misprediction rate | 8.213024e-06 |
+| Branch misprediction ratio |       0.0004 |
+|   Instructions per branch  |      53.6594 |
++----------------------------+--------------+
+
+Region: add_source_term_pop_guo_CASE1
+Group: 1
++------------------------------+---------+------------+
+|             Event            | Counter |  f0644:0:0 |
++------------------------------+---------+------------+
+|      Runtime (RDTSC) [s]     |   TSC   |   0.732827 |
+|         Region calls         |   CTR   |        200 |
+|       INSTR_RETIRED_ANY      |  FIXC0  | 4155214000 |
+|     CPU_CLK_UNHALTED_CORE    |  FIXC1  | 1555238000 |
+|     CPU_CLK_UNHALTED_REF     |  FIXC2  | 1555235000 |
+|         TOPDOWN_SLOTS        |  FIXC3  | 7776192000 |
+| BR_INST_RETIRED_ALL_BRANCHES |   PMC0  |   76748800 |
+| BR_MISP_RETIRED_ALL_BRANCHES |   PMC1  |      27832 |
++------------------------------+---------+------------+
+
++----------------------------+--------------+
+|           Metric           |   f0644:0:0  |
++----------------------------+--------------+
+|     Runtime (RDTSC) [s]    |       0.7328 |
+|    Runtime unhalted [s]    |       0.6496 |
+|         Clock [MHz]        |    2394.3073 |
+|             CPI            |       0.3743 |
+|         Branch rate        |       0.0185 |
+|  Branch misprediction rate | 6.698091e-06 |
+| Branch misprediction ratio |       0.0004 |
+|   Instructions per branch  |      54.1404 |
++----------------------------+--------------+
+
+Region: add_source_term_pop_guo_CASE1_SETUP
+Group: 1
++------------------------------+---------+-----------+
+|             Event            | Counter | f0644:0:0 |
++------------------------------+---------+-----------+
+|      Runtime (RDTSC) [s]     |   TSC   |   6.3e-05 |
+|         Region calls         |   CTR   |       200 |
+|       INSTR_RETIRED_ANY      |  FIXC0  |   2003204 |
+|     CPU_CLK_UNHALTED_CORE    |  FIXC1  |   1758168 |
+|     CPU_CLK_UNHALTED_REF     |  FIXC2  |   1757952 |
+|         TOPDOWN_SLOTS        |  FIXC3  |   8790840 |
+| BR_INST_RETIRED_ALL_BRANCHES |   PMC0  |    398604 |
+| BR_MISP_RETIRED_ALL_BRANCHES |   PMC1  |      3752 |
++------------------------------+---------+-----------+
+
++----------------------------+-----------+
+|           Metric           | f0644:0:0 |
++----------------------------+-----------+
+|     Runtime (RDTSC) [s]    |    0.0001 |
+|    Runtime unhalted [s]    |    0.0007 |
+|         Clock [MHz]        | 2394.5969 |
+|             CPI            |    0.8777 |
+|         Branch rate        |    0.1990 |
+|  Branch misprediction rate |    0.0019 |
+| Branch misprediction ratio |    0.0094 |
+|   Instructions per branch  |    5.0255 |
++----------------------------+-----------+
+
+Region: add_source_term_pop_guo_CASE1_LOOP2
+Group: 1
++------------------------------+---------+------------+
+|             Event            | Counter |  f0644:0:0 |
++------------------------------+---------+------------+
+|      Runtime (RDTSC) [s]     |   TSC   |    0.64955 |
+|         Region calls         |   CTR   |        200 |
+|       INSTR_RETIRED_ANY      |  FIXC0  | 4147410000 |
+|     CPU_CLK_UNHALTED_CORE    |  FIXC1  | 1548529000 |
+|     CPU_CLK_UNHALTED_REF     |  FIXC2  | 1548523000 |
+|         TOPDOWN_SLOTS        |  FIXC3  | 7742643000 |
+| BR_INST_RETIRED_ALL_BRANCHES |   PMC0  |   75194590 |
+| BR_MISP_RETIRED_ALL_BRANCHES |   PMC1  |      13090 |
++------------------------------+---------+------------+
+
++----------------------------+--------------+
+|           Metric           |   f0644:0:0  |
++----------------------------+--------------+
+|     Runtime (RDTSC) [s]    |       0.6495 |
+|    Runtime unhalted [s]    |       0.6468 |
+|         Clock [MHz]        |    2394.3120 |
+|             CPI            |       0.3734 |
+|         Branch rate        |       0.0181 |
+|  Branch misprediction rate | 3.156187e-06 |
+| Branch misprediction ratio |       0.0002 |
+|   Instructions per branch  |      55.1557 |
++----------------------------+--------------+
+
+Region: compute_density_momentum_OUTER
+Group: 1
++------------------------------+---------+------------+
+|             Event            | Counter |  f0644:0:0 |
++------------------------------+---------+------------+
+|      Runtime (RDTSC) [s]     |   TSC   |   0.224896 |
+|         Region calls         |   CTR   |        200 |
+|       INSTR_RETIRED_ANY      |  FIXC0  |  797560900 |
+|     CPU_CLK_UNHALTED_CORE    |  FIXC1  |  345701700 |
+|     CPU_CLK_UNHALTED_REF     |  FIXC2  |  345702900 |
+|         TOPDOWN_SLOTS        |  FIXC3  | 1728508000 |
+| BR_INST_RETIRED_ALL_BRANCHES |   PMC0  |   19792470 |
+| BR_MISP_RETIRED_ALL_BRANCHES |   PMC1  |      18125 |
++------------------------------+---------+------------+
+
++----------------------------+--------------+
+|           Metric           |   f0644:0:0  |
++----------------------------+--------------+
+|     Runtime (RDTSC) [s]    |       0.2249 |
+|    Runtime unhalted [s]    |       0.1444 |
+|         Clock [MHz]        |    2394.2944 |
+|             CPI            |       0.4334 |
+|         Branch rate        |       0.0248 |
+|  Branch misprediction rate | 2.272554e-05 |
+| Branch misprediction ratio |       0.0009 |
+|   Instructions per branch  |      40.2962 |
++----------------------------+--------------+
+
+Region: compute_density_momentum_LOOP
+Group: 1
++------------------------------+---------+------------+
+|             Event            | Counter |  f0644:0:0 |
++------------------------------+---------+------------+
+|      Runtime (RDTSC) [s]     |   TSC   |   0.141477 |
+|         Region calls         |   CTR   |        200 |
+|       INSTR_RETIRED_ANY      |  FIXC0  |  789629600 |
+|     CPU_CLK_UNHALTED_CORE    |  FIXC1  |  338691100 |
+|     CPU_CLK_UNHALTED_REF     |  FIXC2  |  338687600 |
+|         TOPDOWN_SLOTS        |  FIXC3  | 1693455000 |
+| BR_INST_RETIRED_ALL_BRANCHES |   PMC0  |   18253920 |
+| BR_MISP_RETIRED_ALL_BRANCHES |   PMC1  |       3917 |
++------------------------------+---------+------------+
+
++----------------------------+--------------+
+|           Metric           |   f0644:0:0  |
++----------------------------+--------------+
+|     Runtime (RDTSC) [s]    |       0.1415 |
+|    Runtime unhalted [s]    |       0.1415 |
+|         Clock [MHz]        |    2394.3274 |
+|             CPI            |       0.4289 |
+|         Branch rate        |       0.0231 |
+|  Branch misprediction rate | 4.960554e-06 |
+| Branch misprediction ratio |       0.0002 |
+|   Instructions per branch  |      43.2581 |
++----------------------------+--------------+
+
+Region: compute_density_momentum_PEEL
+Group: 1
++------------------------------+---------+-----------+
+|             Event            | Counter | f0644:0:0 |
++------------------------------+---------+-----------+
+|      Runtime (RDTSC) [s]     |   TSC   |  0.000181 |
+|         Region calls         |   CTR   |       200 |
+|       INSTR_RETIRED_ANY      |  FIXC0  |   2241863 |
+|     CPU_CLK_UNHALTED_CORE    |  FIXC1  |   1988637 |
+|     CPU_CLK_UNHALTED_REF     |  FIXC2  |   1988928 |
+|         TOPDOWN_SLOTS        |  FIXC3  |   9943185 |
+| BR_INST_RETIRED_ALL_BRANCHES |   PMC0  |    402004 |
+| BR_MISP_RETIRED_ALL_BRANCHES |   PMC1  |      3351 |
++------------------------------+---------+-----------+
+
++----------------------------+-----------+
+|           Metric           | f0644:0:0 |
++----------------------------+-----------+
+|     Runtime (RDTSC) [s]    |    0.0002 |
+|    Runtime unhalted [s]    |    0.0008 |
+|         Clock [MHz]        | 2393.9524 |
+|             CPI            |    0.8870 |
+|         Branch rate        |    0.1793 |
+|  Branch misprediction rate |    0.0015 |
+| Branch misprediction ratio |    0.0083 |
+|   Instructions per branch  |    5.5767 |
++----------------------------+-----------+
+

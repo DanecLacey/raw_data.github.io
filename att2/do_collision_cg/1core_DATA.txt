@@ -1,0 +1,307 @@
+2025-03-25 16:02:03 - 
+2025-03-25 16:02:03 - =========================( Parsing command line arguments )=========================
+2025-03-25 16:02:03 - 
+2025-03-25 16:02:03 - All paths relative to input file subdirectory <../tests/perf/cg/scenario/cg/>
+2025-03-25 16:02:03 - Input file = <../tests/perf/cg/scenario/cg/input_1core>
+2025-03-25 16:02:03 - File tag = <default>
+2025-03-25 16:02:03 - From now on logging to file <LOG_1core>
+Region: Compute
+Group: 1
++-----------------------------+---------+-------------+
+|            Event            | Counter |  f0644:0:0  |
++-----------------------------+---------+-------------+
+|     Runtime (RDTSC) [s]     |   TSC   |    4.827153 |
+|         Region calls        |   CTR   |           1 |
+|      INSTR_RETIRED_ANY      |  FIXC0  | 23156840000 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  | 10130520000 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  | 10130530000 |
+|        TOPDOWN_SLOTS        |  FIXC3  | 50652590000 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  |  9581577000 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |  2581238000 |
++-----------------------------+---------+-------------+
+
++----------------------+-----------+
+|        Metric        | f0644:0:0 |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    4.8272 |
+| Runtime unhalted [s] |    4.2311 |
+|      Clock [MHz]     | 2394.2925 |
+|          CPI         |    0.4375 |
+|  Load to store ratio |    3.7120 |
++----------------------+-----------+
+
+Region: do_collision_cg_OUTER
+Group: 1
++-----------------------------+---------+-------------+
+|            Event            | Counter |  f0644:0:0  |
++-----------------------------+---------+-------------+
+|     Runtime (RDTSC) [s]     |   TSC   |    3.006149 |
+|         Region calls        |   CTR   |         200 |
+|      INSTR_RETIRED_ANY      |  FIXC0  | 15422030000 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  |  6464074000 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  |  6464096000 |
+|        TOPDOWN_SLOTS        |  FIXC3  | 32320370000 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  |  6437340000 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |  1913024000 |
++-----------------------------+---------+-------------+
+
++----------------------+-----------+
+|        Metric        | f0644:0:0 |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    3.0061 |
+| Runtime unhalted [s] |    2.6998 |
+|      Clock [MHz]     | 2394.2868 |
+|          CPI         |    0.4191 |
+|  Load to store ratio |    3.3650 |
++----------------------+-----------+
+
+Region: do_collision_cg_PHASE1
+Group: 1
++-----------------------------+---------+-----------+
+|            Event            | Counter | f0644:0:0 |
++-----------------------------+---------+-----------+
+|     Runtime (RDTSC) [s]     |   TSC   |  0.016391 |
+|         Region calls        |   CTR   |       200 |
+|      INSTR_RETIRED_ANY      |  FIXC0  |  71894280 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  |  40493280 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  |  40495010 |
+|        TOPDOWN_SLOTS        |  FIXC3  | 202466400 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  |  16787680 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |  18954200 |
++-----------------------------+---------+-----------+
+
++----------------------+-----------+
+|        Metric        | f0644:0:0 |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0164 |
+| Runtime unhalted [s] |    0.0169 |
+|      Clock [MHz]     | 2394.1926 |
+|          CPI         |    0.5632 |
+|  Load to store ratio |    0.8857 |
++----------------------+-----------+
+
+Region: do_collision_cg_PHASE2
+Group: 1
++-----------------------------+---------+------------+
+|            Event            | Counter |  f0644:0:0 |
++-----------------------------+---------+------------+
+|     Runtime (RDTSC) [s]     |   TSC   |   0.332951 |
+|         Region calls        |   CTR   |        200 |
+|      INSTR_RETIRED_ANY      |  FIXC0  | 1897886000 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  |  788791900 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  |  788797000 |
+|        TOPDOWN_SLOTS        |  FIXC3  | 3943959000 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  |  676245100 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |  368700600 |
++-----------------------------+---------+------------+
+
++----------------------+-----------+
+|        Metric        | f0644:0:0 |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.3330 |
+| Runtime unhalted [s] |    0.3294 |
+|      Clock [MHz]     | 2394.2794 |
+|          CPI         |    0.4156 |
+|  Load to store ratio |    1.8341 |
++----------------------+-----------+
+
+Region: do_collision_cg_PHASE3
+Group: 1
++-----------------------------+---------+------------+
+|            Event            | Counter |  f0644:0:0 |
++-----------------------------+---------+------------+
+|     Runtime (RDTSC) [s]     |   TSC   |   0.318628 |
+|         Region calls        |   CTR   |        200 |
+|      INSTR_RETIRED_ANY      |  FIXC0  | 1465247000 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  |  759085600 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  |  759087400 |
+|        TOPDOWN_SLOTS        |  FIXC3  | 3795428000 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  |  576869700 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |  177613600 |
++-----------------------------+---------+------------+
+
++----------------------+-----------+
+|        Metric        | f0644:0:0 |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.3186 |
+| Runtime unhalted [s] |    0.3170 |
+|      Clock [MHz]     | 2394.2892 |
+|          CPI         |    0.5181 |
+|  Load to store ratio |    3.2479 |
++----------------------+-----------+
+
+Region: do_collision_cg_PHASE4
+Group: 1
++-----------------------------+---------+------------+
+|            Event            | Counter |  f0644:0:0 |
++-----------------------------+---------+------------+
+|     Runtime (RDTSC) [s]     |   TSC   |   0.296235 |
+|         Region calls        |   CTR   |        200 |
+|      INSTR_RETIRED_ANY      |  FIXC0  | 1827026000 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  |  708349700 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  |  708350500 |
+|        TOPDOWN_SLOTS        |  FIXC3  | 3541748000 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  |  796186900 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |  180001400 |
++-----------------------------+---------+------------+
+
++----------------------+-----------+
+|        Metric        | f0644:0:0 |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.2962 |
+| Runtime unhalted [s] |    0.2958 |
+|      Clock [MHz]     | 2394.2922 |
+|          CPI         |    0.3877 |
+|  Load to store ratio |    4.4232 |
++----------------------+-----------+
+
+Region: do_collision_cg_PHASE5
+Group: 1
++-----------------------------+---------+-------------+
+|            Event            | Counter |  f0644:0:0  |
++-----------------------------+---------+-------------+
+|     Runtime (RDTSC) [s]     |   TSC   |    0.868742 |
+|         Region calls        |   CTR   |         200 |
+|      INSTR_RETIRED_ANY      |  FIXC0  |  4697862000 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  |  2072735000 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  |  2072737000 |
+|        TOPDOWN_SLOTS        |  FIXC3  | 10363670000 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  |  2364333000 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |   513793200 |
++-----------------------------+---------+-------------+
+
++----------------------+-----------+
+|        Metric        | f0644:0:0 |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.8687 |
+| Runtime unhalted [s] |    0.8657 |
+|      Clock [MHz]     | 2394.2926 |
+|          CPI         |    0.4412 |
+|  Load to store ratio |    4.6017 |
++----------------------+-----------+
+
+Region: do_collision_cg_PHASE6
+Group: 1
++-----------------------------+---------+------------+
+|            Event            | Counter |  f0644:0:0 |
++-----------------------------+---------+------------+
+|     Runtime (RDTSC) [s]     |   TSC   |   0.216895 |
+|         Region calls        |   CTR   |        200 |
+|      INSTR_RETIRED_ANY      |  FIXC0  | 1598346000 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  |  518355700 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  |  518356000 |
+|        TOPDOWN_SLOTS        |  FIXC3  | 2591779000 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  |  532549600 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |  354916800 |
++-----------------------------+---------+------------+
+
++----------------------+-----------+
+|        Metric        | f0644:0:0 |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.2169 |
+| Runtime unhalted [s] |    0.2165 |
+|      Clock [MHz]     | 2394.2935 |
+|          CPI         |    0.3243 |
+|  Load to store ratio |    1.5005 |
++----------------------+-----------+
+
+Region: do_collision_cg_PHASE7
+Group: 1
++-----------------------------+---------+-----------+
+|            Event            | Counter | f0644:0:0 |
++-----------------------------+---------+-----------+
+|     Runtime (RDTSC) [s]     |   TSC   |  0.072378 |
+|         Region calls        |   CTR   |       200 |
+|      INSTR_RETIRED_ANY      |  FIXC0  | 599253600 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  | 174067700 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  | 174066400 |
+|        TOPDOWN_SLOTS        |  FIXC3  | 870338300 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  |  93806630 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |    305000 |
++-----------------------------+---------+-----------+
+
++----------------------+-----------+
+|        Metric        | f0644:0:0 |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0724 |
+| Runtime unhalted [s] |    0.0727 |
+|      Clock [MHz]     | 2394.3128 |
+|          CPI         |    0.2905 |
+|  Load to store ratio |  307.5627 |
++----------------------+-----------+
+
+Region: compute_density_momentum_OUTER
+Group: 1
++-----------------------------+---------+------------+
+|            Event            | Counter |  f0644:0:0 |
++-----------------------------+---------+------------+
+|     Runtime (RDTSC) [s]     |   TSC   |   0.506202 |
+|         Region calls        |   CTR   |        400 |
+|      INSTR_RETIRED_ANY      |  FIXC0  | 1889799000 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  |  830407300 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  |  830398800 |
+|        TOPDOWN_SLOTS        |  FIXC3  | 4152037000 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  | 1116908000 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |  122339900 |
++-----------------------------+---------+------------+
+
++----------------------+-----------+
+|        Metric        | f0644:0:0 |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.5062 |
+| Runtime unhalted [s] |    0.3468 |
+|      Clock [MHz]     | 2394.3194 |
+|          CPI         |    0.4394 |
+|  Load to store ratio |    9.1295 |
++----------------------+-----------+
+
+Region: compute_density_momentum_LOOP
+Group: 1
++-----------------------------+---------+------------+
+|            Event            | Counter |  f0644:0:0 |
++-----------------------------+---------+------------+
+|     Runtime (RDTSC) [s]     |   TSC   |   0.340844 |
+|         Region calls        |   CTR   |        400 |
+|      INSTR_RETIRED_ANY      |  FIXC0  | 1871759000 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  |  815011000 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  |  815006600 |
+|        TOPDOWN_SLOTS        |  FIXC3  | 4075055000 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  | 1111701000 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |  119838200 |
++-----------------------------+---------+------------+
+
++----------------------+-----------+
+|        Metric        | f0644:0:0 |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.3408 |
+| Runtime unhalted [s] |    0.3404 |
+|      Clock [MHz]     | 2394.3078 |
+|          CPI         |    0.4354 |
+|  Load to store ratio |    9.2767 |
++----------------------+-----------+
+
+Region: compute_density_momentum_PEEL
+Group: 1
++-----------------------------+---------+-----------+
+|            Event            | Counter | f0644:0:0 |
++-----------------------------+---------+-----------+
+|     Runtime (RDTSC) [s]     |   TSC   |  0.000861 |
+|         Region calls        |   CTR   |       400 |
+|      INSTR_RETIRED_ANY      |  FIXC0  |   6662006 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  |   5335925 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  |   5337120 |
+|        TOPDOWN_SLOTS        |  FIXC3  |  26679620 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  |   2512806 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |    799600 |
++-----------------------------+---------+-----------+
+
++----------------------+-----------+
+|        Metric        | f0644:0:0 |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0009 |
+| Runtime unhalted [s] |    0.0022 |
+|      Clock [MHz]     | 2393.7588 |
+|          CPI         |    0.8009 |
+|  Load to store ratio |    3.1426 |
++----------------------+-----------+
+
