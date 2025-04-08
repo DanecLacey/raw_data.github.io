@@ -1,0 +1,42 @@
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) Platinum 8360Y CPU @ 2.40GHz
+CPU type:	Intel Icelake SP processor
+CPU clock:	2.39 GHz
+--------------------------------------------------------------------------------
+----------------
+--SpLTSV Bench--
+/home/titan/unrz/unrz55/matrices/HPCG-72-72-72.mtx with 1 thread(s)
+Runtime: 1.11677
+Iterations: 200
+Performance: 1.82107 [GF/s]
+----------------
+--------------------------------------------------------------------------------
+Region spltsv, Group 1: DATA
++-------------------+------------+
+|    Region Info    | HWThread 0 |
++-------------------+------------+
+| RDTSC Runtime [s] |   1.609117 |
+|     call count    |        300 |
++-------------------+------------+
+
++-----------------------------+---------+-------------+
+|            Event            | Counter |  HWThread 0 |
++-----------------------------+---------+-------------+
+|      INSTR_RETIRED_ANY      |  FIXC0  | 10332900000 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  |  3841454000 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  |  3841456000 |
+|        TOPDOWN_SLOTS        |  FIXC3  | 19207270000 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  |  4708877000 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |   112135900 |
++-----------------------------+---------+-------------+
+
++----------------------+------------+
+|        Metric        | HWThread 0 |
++----------------------+------------+
+|  Runtime (RDTSC) [s] |     1.6091 |
+| Runtime unhalted [s] |     1.6044 |
+|      Clock [MHz]     |  2394.3235 |
+|          CPI         |     0.3718 |
+|  Load to store ratio |    41.9926 |
++----------------------+------------+
+

@@ -1,0 +1,48 @@
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) Platinum 8360Y CPU @ 2.40GHz
+CPU type:	Intel Icelake SP processor
+CPU clock:	2.39 GHz
+--------------------------------------------------------------------------------
+----------------
+--SpLTSV Bench--
+/home/titan/unrz/unrz55/matrices/HPCG-72-72-72.mtx with 1 thread(s)
+Runtime: 1.11595
+Iterations: 200
+Performance: 1.82107 [GF/s]
+----------------
+--------------------------------------------------------------------------------
+Region spltsv, Group 1: L2
++-------------------+------------+
+|    Region Info    | HWThread 0 |
++-------------------+------------+
+| RDTSC Runtime [s] |   1.601693 |
+|     call count    |        300 |
++-------------------+------------+
+
++-----------------------+---------+-------------+
+|         Event         | Counter |  HWThread 0 |
++-----------------------+---------+-------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 10332930000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  3823167000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  3823171000 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 19115840000 |
+|    L1D_REPLACEMENT    |   PMC0  |   330386900 |
+|    L2_TRANS_L1D_WB    |   PMC1  |    14238400 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |      209966 |
++-----------------------+---------+-------------+
+
++--------------------------------+------------+
+|             Metric             | HWThread 0 |
++--------------------------------+------------+
+|       Runtime (RDTSC) [s]      |     1.6017 |
+|      Runtime unhalted [s]      |     1.5968 |
+|           Clock [MHz]          |  2394.2350 |
+|               CPI              |     0.3700 |
+|  L2D load bandwidth [MBytes/s] | 13201.5072 |
+|  L2D load data volume [GBytes] |    21.1448 |
+| L2D evict bandwidth [MBytes/s] |   568.9340 |
+| L2D evict data volume [GBytes] |     0.9113 |
+|     L2 bandwidth [MBytes/s]    | 13778.8309 |
+|     L2 data volume [GBytes]    |    22.0695 |
++--------------------------------+------------+
+

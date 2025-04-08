@@ -1,0 +1,61 @@
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) Platinum 8360Y CPU @ 2.40GHz
+CPU type:	Intel Icelake SP processor
+CPU clock:	2.39 GHz
+--------------------------------------------------------------------------------
+----------------
+--SpLTSV Bench--
+/home/titan/unrz/unrz55/matrices/HPCG-72-72-72.mtx with 1 thread(s)
+Runtime: 1.18596
+Iterations: 200
+Performance: 1.70916 [GF/s]
+----------------
+--------------------------------------------------------------------------------
+Region spltsv, Group 1: MEM
++-------------------+------------+
+|    Region Info    | HWThread 0 |
++-------------------+------------+
+| RDTSC Runtime [s] |   1.608308 |
+|     call count    |        300 |
++-------------------+------------+
+
++-----------------------+---------+-------------+
+|         Event         | Counter |  HWThread 0 |
++-----------------------+---------+-------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 10333300000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  3835473000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  3835476000 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 19177370000 |
+|      CAS_COUNT_RD     | MBOX0C0 |    63448140 |
+|      CAS_COUNT_WR     | MBOX0C1 |     2534450 |
+|      CAS_COUNT_RD     | MBOX1C0 |    63335500 |
+|      CAS_COUNT_WR     | MBOX1C1 |     2519499 |
+|      CAS_COUNT_RD     | MBOX2C0 |    63381840 |
+|      CAS_COUNT_WR     | MBOX2C1 |     2505552 |
+|      CAS_COUNT_RD     | MBOX3C0 |    63356640 |
+|      CAS_COUNT_WR     | MBOX3C1 |     2515226 |
+|      CAS_COUNT_RD     | MBOX4C0 |       16427 |
+|      CAS_COUNT_WR     | MBOX4C1 |       16682 |
+|      CAS_COUNT_RD     | MBOX5C0 |       21278 |
+|      CAS_COUNT_WR     | MBOX5C1 |       25065 |
+|      CAS_COUNT_RD     | MBOX6C0 |       17421 |
+|      CAS_COUNT_WR     | MBOX6C1 |       19610 |
+|      CAS_COUNT_RD     | MBOX7C0 |       19727 |
+|      CAS_COUNT_WR     | MBOX7C1 |       21144 |
++-----------------------+---------+-------------+
+
++-----------------------------------+------------+
+|               Metric              | HWThread 0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     1.6083 |
+|        Runtime unhalted [s]       |     1.6019 |
+|            Clock [MHz]            |  2394.3289 |
+|                CPI                |     0.3712 |
+|  Memory read bandwidth [MBytes/s] | 10091.4789 |
+|  Memory read data volume [GBytes] |    16.2302 |
+| Memory write bandwidth [MBytes/s] |   404.1904 |
+| Memory write data volume [GBytes] |     0.6501 |
+|    Memory bandwidth [MBytes/s]    | 10495.6693 |
+|    Memory data volume [GBytes]    |    16.8803 |
++-----------------------------------+------------+
+

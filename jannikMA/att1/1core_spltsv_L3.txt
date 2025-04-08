@@ -1,0 +1,53 @@
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) Platinum 8360Y CPU @ 2.40GHz
+CPU type:	Intel Icelake SP processor
+CPU clock:	2.39 GHz
+--------------------------------------------------------------------------------
+----------------
+--SpLTSV Bench--
+/home/titan/unrz/unrz55/matrices/HPCG-72-72-72.mtx with 1 thread(s)
+Runtime: 1.12404
+Iterations: 200
+Performance: 1.80073 [GF/s]
+----------------
+--------------------------------------------------------------------------------
+Region spltsv, Group 1: L3
++-------------------+------------+
+|    Region Info    | HWThread 0 |
++-------------------+------------+
+| RDTSC Runtime [s] |   1.607377 |
+|     call count    |        300 |
++-------------------+------------+
+
++-------------------------+---------+-------------+
+|          Event          | Counter |  HWThread 0 |
++-------------------------+---------+-------------+
+|    INSTR_RETIRED_ANY    |  FIXC0  | 10332960000 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  |  3836615000 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  |  3836616000 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 19183070000 |
+|     L2_LINES_IN_ALL     |   PMC0  |   314925500 |
+|      L2_TRANS_L2_WB     |   PMC1  |   314048000 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |      876280 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |   314048000 |
++-------------------------+---------+-------------+
+
++-----------------------------------+------------+
+|               Metric              | HWThread 0 |
++-----------------------------------+------------+
+|        Runtime (RDTSC) [s]        |     1.6074 |
+|        Runtime unhalted [s]       |     1.6024 |
+|            Clock [MHz]            |  2394.3269 |
+|                CPI                |     0.3713 |
+|    L3 load bandwidth [MBytes/s]   | 12539.2064 |
+|    L3 load data volume [GBytes]   |    20.1552 |
+|   L3 evict bandwidth [MBytes/s]   | 12504.2675 |
+|   L3 evict data volume [GBytes]   |    20.0991 |
+| L3|MEM evict bandwidth [MBytes/s] | 12504.2675 |
+| L3|MEM evict data volume [GBytes] |    20.0991 |
+|  Dropped CLs bandwidth [MBytes/s] |    34.8903 |
+|  Dropped CLs data volume [GBytes] |     0.0561 |
+|      L3 bandwidth [MBytes/s]      | 25043.4739 |
+|      L3 data volume [GBytes]      |    40.2543 |
++-----------------------------------+------------+
+

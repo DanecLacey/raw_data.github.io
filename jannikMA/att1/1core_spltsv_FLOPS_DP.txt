@@ -1,0 +1,49 @@
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) Platinum 8360Y CPU @ 2.40GHz
+CPU type:	Intel Icelake SP processor
+CPU clock:	2.39 GHz
+--------------------------------------------------------------------------------
+----------------
+--SpLTSV Bench--
+/home/titan/unrz/unrz55/matrices/HPCG-72-72-72.mtx with 1 thread(s)
+Runtime: 1.12591
+Iterations: 200
+Performance: 1.80073 [GF/s]
+----------------
+--------------------------------------------------------------------------------
+Region spltsv, Group 1: FLOPS_DP
++-------------------+------------+
+|    Region Info    | HWThread 0 |
++-------------------+------------+
+| RDTSC Runtime [s] |   1.610156 |
+|     call count    |        300 |
++-------------------+------------+
+
++------------------------------------------+---------+-------------+
+|                   Event                  | Counter |  HWThread 0 |
++------------------------------------------+---------+-------------+
+|             INSTR_RETIRED_ANY            |  FIXC0  | 10332960000 |
+|           CPU_CLK_UNHALTED_CORE          |  FIXC1  |  3842952000 |
+|           CPU_CLK_UNHALTED_REF           |  FIXC2  |  3842944000 |
+|               TOPDOWN_SLOTS              |  FIXC3  | 19214760000 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE |   PMC0  |  1306627000 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE   |   PMC1  |   550779600 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE |   PMC2  |           0 |
+| FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE |   PMC3  |           0 |
++------------------------------------------+---------+-------------+
+
++-------------------------+------------+
+|          Metric         | HWThread 0 |
++-------------------------+------------+
+|   Runtime (RDTSC) [s]   |     1.6102 |
+|   Runtime unhalted [s]  |     1.6050 |
+|       Clock [MHz]       |  2394.3348 |
+|           CPI           |     0.3719 |
+|       DP [MFLOP/s]      |  1965.0479 |
+|     AVX DP [MFLOP/s]    |          0 |
+|   AVX512 DP [MFLOP/s]   |          0 |
+|     Packed [MUOPS/s]    |   811.4909 |
+|     Scalar [MUOPS/s]    |   342.0660 |
+| Vectorization ratio [%] |    70.3468 |
++-------------------------+------------+
+
