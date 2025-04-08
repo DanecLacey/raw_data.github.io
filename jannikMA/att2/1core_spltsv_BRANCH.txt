@@ -1,0 +1,45 @@
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) Platinum 8360Y CPU @ 2.40GHz
+CPU type:	Intel Icelake SP processor
+CPU clock:	2.39 GHz
+--------------------------------------------------------------------------------
+----------------
+--SpLTSV Bench--
+/home/titan/unrz/unrz55/matrices/HPCG-128-128-128.mtx with 72 thread(s)
+Runtime: 3.16256
+Iterations: 100
+Performance: 1.79304 [GF/s]
+----------------
+--------------------------------------------------------------------------------
+Region spltsv, Group 1: BRANCH
++-------------------+------------+
+|    Region Info    | HWThread 0 |
++-------------------+------------+
+| RDTSC Runtime [s] |   3.138602 |
+|     call count    |        100 |
++-------------------+------------+
+
++------------------------------+---------+-------------+
+|             Event            | Counter |  HWThread 0 |
++------------------------------+---------+-------------+
+|       INSTR_RETIRED_ANY      |  FIXC0  | 19508450000 |
+|     CPU_CLK_UNHALTED_CORE    |  FIXC1  |  7489929000 |
+|     CPU_CLK_UNHALTED_REF     |  FIXC2  |  7489937000 |
+|         TOPDOWN_SLOTS        |  FIXC3  | 37449640000 |
+| BR_INST_RETIRED_ALL_BRANCHES |   PMC0  |  2692273000 |
+| BR_MISP_RETIRED_ALL_BRANCHES |   PMC1  |     1654134 |
++------------------------------+---------+-------------+
+
++----------------------------+------------+
+|           Metric           | HWThread 0 |
++----------------------------+------------+
+|     Runtime (RDTSC) [s]    |     3.1386 |
+|    Runtime unhalted [s]    |     3.1282 |
+|         Clock [MHz]        |  2394.3021 |
+|             CPI            |     0.3839 |
+|         Branch rate        |     0.1380 |
+|  Branch misprediction rate |     0.0001 |
+| Branch misprediction ratio |     0.0006 |
+|   Instructions per branch  |     7.2461 |
++----------------------------+------------+
+

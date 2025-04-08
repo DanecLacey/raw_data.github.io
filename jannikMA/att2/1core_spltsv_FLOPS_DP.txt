@@ -1,0 +1,49 @@
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) Platinum 8360Y CPU @ 2.40GHz
+CPU type:	Intel Icelake SP processor
+CPU clock:	2.39 GHz
+--------------------------------------------------------------------------------
+----------------
+--SpLTSV Bench--
+/home/titan/unrz/unrz55/matrices/HPCG-128-128-128.mtx with 72 thread(s)
+Runtime: 3.14599
+Iterations: 100
+Performance: 1.79304 [GF/s]
+----------------
+--------------------------------------------------------------------------------
+Region spltsv, Group 1: FLOPS_DP
++-------------------+------------+
+|    Region Info    | HWThread 0 |
++-------------------+------------+
+| RDTSC Runtime [s] |   3.119392 |
+|     call count    |        100 |
++-------------------+------------+
+
++------------------------------------------+---------+-------------+
+|                   Event                  | Counter |  HWThread 0 |
++------------------------------------------+---------+-------------+
+|             INSTR_RETIRED_ANY            |  FIXC0  | 19508460000 |
+|           CPU_CLK_UNHALTED_CORE          |  FIXC1  |  7444042000 |
+|           CPU_CLK_UNHALTED_REF           |  FIXC2  |  7444057000 |
+|               TOPDOWN_SLOTS              |  FIXC3  | 37220210000 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE |   PMC0  |  2477414000 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE   |   PMC1  |  1038887000 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE |   PMC2  |           0 |
+| FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE |   PMC3  |           0 |
++------------------------------------------+---------+-------------+
+
++-------------------------+------------+
+|          Metric         | HWThread 0 |
++-------------------------+------------+
+|   Runtime (RDTSC) [s]   |     3.1194 |
+|   Runtime unhalted [s]  |     3.1090 |
+|       Clock [MHz]       |  2394.3121 |
+|           CPI           |     0.3816 |
+|       DP [MFLOP/s]      |  1921.4369 |
+|     AVX DP [MFLOP/s]    |          0 |
+|   AVX512 DP [MFLOP/s]   |          0 |
+|     Packed [MUOPS/s]    |   794.1977 |
+|     Scalar [MUOPS/s]    |   333.0415 |
+| Vectorization ratio [%] |    70.4551 |
++-------------------------+------------+
+
