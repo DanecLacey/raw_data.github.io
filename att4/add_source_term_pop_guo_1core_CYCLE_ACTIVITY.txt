@@ -1,0 +1,37 @@
+2025-04-10 16:06:54 - 
+2025-04-10 16:06:54 - =========================( Parsing command line arguments )=========================
+2025-04-10 16:06:54 - 
+2025-04-10 16:06:54 - All paths relative to input file subdirectory <../tests/perf/lb/scenario/guo/>
+2025-04-10 16:06:54 - Input file = <../tests/perf/lb/scenario/guo/input_1core>
+2025-04-10 16:06:54 - File tag = <default>
+2025-04-10 16:06:54 - From now on logging to file <LOG_1core>
+Region: add_source_term_pop_guo_CASE1_LOOP2
+Group: 1
++--------------------------------+---------+------------+
+|              Event             | Counter |  f0402:0:0 |
++--------------------------------+---------+------------+
+|       Runtime (RDTSC) [s]      |   TSC   |    0.58491 |
+|          Region calls          |   CTR   |        200 |
+|        INSTR_RETIRED_ANY       |  FIXC0  | 4098086000 |
+|      CPU_CLK_UNHALTED_CORE     |  FIXC1  | 1396346000 |
+|      CPU_CLK_UNHALTED_REF      |  FIXC2  | 1396351000 |
+|          TOPDOWN_SLOTS         |  FIXC3  | 6981728000 |
+|  CYCLE_ACTIVITY_CYCLES_L2_MISS |   PMC0  |    2420501 |
+|  CYCLE_ACTIVITY_CYCLES_MEM_ANY |   PMC1  | 1385928000 |
+| CYCLE_ACTIVITY_CYCLES_L1D_MISS |   PMC2  |   12954190 |
+|   CYCLE_ACTIVITY_STALLS_TOTAL  |   PMC3  |   16428270 |
++--------------------------------+---------+------------+
+
++--------------------------------------------------+-----------+
+|                      Metric                      | f0402:0:0 |
++--------------------------------------------------+-----------+
+|                Runtime (RDTSC) [s]               |    0.5849 |
+|               Runtime unhalted [s]               |    0.5832 |
+|                    Clock [MHz]                   | 2394.3146 |
+|                        CPI                       |    0.3407 |
+|           Cycles without execution [%]           |    1.1765 |
+|      Cycles without execution due to L1D [%]     |    0.9277 |
+|      Cycles without execution due to L2 [%]      |    0.1733 |
+| Cycles without execution due to memory loads [%] |   99.2539 |
++--------------------------------------------------+-----------+
+
