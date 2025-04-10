@@ -1,0 +1,51 @@
+2025-04-10 15:50:54 - 
+2025-04-10 15:50:54 - =========================( Parsing command line arguments )=========================
+2025-04-10 15:50:54 - 
+2025-04-10 15:50:54 - All paths relative to input file subdirectory <../tests/perf/lb/scenario/guo/>
+2025-04-10 15:50:54 - Input file = <../tests/perf/lb/scenario/guo/input_1core>
+2025-04-10 15:50:54 - File tag = <default>
+2025-04-10 15:50:54 - From now on logging to file <LOG_1core>
+Region: add_source_term_pop_guo_CASE1_LOOP2
+Group: 1
++-----------------------+---------+------------+
+|         Event         | Counter |  f0402:0:0 |
++-----------------------+---------+------------+
+|  Runtime (RDTSC) [s]  |   TSC   |   0.586292 |
+|      Region calls     |   CTR   |        200 |
+|   INSTR_RETIRED_ANY   |  FIXC0  | 4098317000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 1399153000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 1399158000 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 6995764000 |
+|      CAS_COUNT_RD     | MBOX0C0 |      15989 |
+|      CAS_COUNT_WR     | MBOX0C1 |       8911 |
+|      CAS_COUNT_RD     | MBOX1C0 |      15853 |
+|      CAS_COUNT_WR     | MBOX1C1 |       8547 |
+|      CAS_COUNT_RD     | MBOX2C0 |      15208 |
+|      CAS_COUNT_WR     | MBOX2C1 |       6995 |
+|      CAS_COUNT_RD     | MBOX3C0 |      18340 |
+|      CAS_COUNT_WR     | MBOX3C1 |      11655 |
+|      CAS_COUNT_RD     | MBOX4C0 |      93483 |
+|      CAS_COUNT_WR     | MBOX4C1 |      11251 |
+|      CAS_COUNT_RD     | MBOX5C0 |      94815 |
+|      CAS_COUNT_WR     | MBOX5C1 |      13451 |
+|      CAS_COUNT_RD     | MBOX6C0 |      93822 |
+|      CAS_COUNT_WR     | MBOX6C1 |      11838 |
+|      CAS_COUNT_RD     | MBOX7C0 |      98348 |
+|      CAS_COUNT_WR     | MBOX7C1 |      19786 |
++-----------------------+---------+------------+
+
++-----------------------------------+-----------+
+|               Metric              | f0402:0:0 |
++-----------------------------------+-----------+
+|        Runtime (RDTSC) [s]        |    0.5863 |
+|        Runtime unhalted [s]       |    0.5844 |
+|            Clock [MHz]            | 2394.3155 |
+|                CPI                |    0.3414 |
+|  Memory read bandwidth [MBytes/s] |   48.6701 |
+|  Memory read data volume [GBytes] |    0.0285 |
+| Memory write bandwidth [MBytes/s] |   10.0902 |
+| Memory write data volume [GBytes] |    0.0059 |
+|    Memory bandwidth [MBytes/s]    |   58.7603 |
+|    Memory data volume [GBytes]    |    0.0345 |
++-----------------------------------+-----------+
+

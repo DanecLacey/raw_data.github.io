@@ -1,0 +1,35 @@
+2025-04-10 15:47:44 - 
+2025-04-10 15:47:44 - =========================( Parsing command line arguments )=========================
+2025-04-10 15:47:44 - 
+2025-04-10 15:47:44 - All paths relative to input file subdirectory <../tests/perf/lb/scenario/guo/>
+2025-04-10 15:47:44 - Input file = <../tests/perf/lb/scenario/guo/input_1core>
+2025-04-10 15:47:44 - File tag = <default>
+2025-04-10 15:47:44 - From now on logging to file <LOG_1core>
+Region: add_source_term_pop_guo_CASE1_LOOP2
+Group: 1
++------------------------------+---------+------------+
+|             Event            | Counter |  f0402:0:0 |
++------------------------------+---------+------------+
+|      Runtime (RDTSC) [s]     |   TSC   |   0.585148 |
+|         Region calls         |   CTR   |        200 |
+|       INSTR_RETIRED_ANY      |  FIXC0  | 4098049000 |
+|     CPU_CLK_UNHALTED_CORE    |  FIXC1  | 1397538000 |
+|     CPU_CLK_UNHALTED_REF     |  FIXC2  | 1397542000 |
+|         TOPDOWN_SLOTS        |  FIXC3  | 6987688000 |
+| BR_INST_RETIRED_ALL_BRANCHES |   PMC0  |   87981370 |
+| BR_MISP_RETIRED_ALL_BRANCHES |   PMC1  |      23673 |
++------------------------------+---------+------------+
+
++----------------------------+--------------+
+|           Metric           |   f0402:0:0  |
++----------------------------+--------------+
+|     Runtime (RDTSC) [s]    |       0.5851 |
+|    Runtime unhalted [s]    |       0.5837 |
+|         Clock [MHz]        |    2394.2796 |
+|             CPI            |       0.3410 |
+|         Branch rate        |       0.0215 |
+|  Branch misprediction rate | 5.776651e-06 |
+| Branch misprediction ratio |       0.0003 |
+|   Instructions per branch  |      46.5786 |
++----------------------------+--------------+
+

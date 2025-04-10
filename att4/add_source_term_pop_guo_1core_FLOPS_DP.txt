@@ -1,0 +1,39 @@
+2025-04-10 15:51:27 - 
+2025-04-10 15:51:27 - =========================( Parsing command line arguments )=========================
+2025-04-10 15:51:27 - 
+2025-04-10 15:51:27 - All paths relative to input file subdirectory <../tests/perf/lb/scenario/guo/>
+2025-04-10 15:51:27 - Input file = <../tests/perf/lb/scenario/guo/input_1core>
+2025-04-10 15:51:27 - File tag = <default>
+2025-04-10 15:51:27 - From now on logging to file <LOG_1core>
+Region: add_source_term_pop_guo_CASE1_LOOP2
+Group: 1
++------------------------------------------+---------+------------+
+|                   Event                  | Counter |  f0402:0:0 |
++------------------------------------------+---------+------------+
+|            Runtime (RDTSC) [s]           |   TSC   |   0.585045 |
+|               Region calls               |   CTR   |        200 |
+|             INSTR_RETIRED_ANY            |  FIXC0  | 4098088000 |
+|           CPU_CLK_UNHALTED_CORE          |  FIXC1  | 1398508000 |
+|           CPU_CLK_UNHALTED_REF           |  FIXC2  | 1398507000 |
+|               TOPDOWN_SLOTS              |  FIXC3  | 6992538000 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE |   PMC0  |          0 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE   |   PMC1  |     880200 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE |   PMC2  | 1045486000 |
+| FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE |   PMC3  |          0 |
++------------------------------------------+---------+------------+
+
++-------------------------+-----------+
+|          Metric         | f0402:0:0 |
++-------------------------+-----------+
+|   Runtime (RDTSC) [s]   |    0.5850 |
+|   Runtime unhalted [s]  |    0.5841 |
+|       Clock [MHz]       | 2394.3190 |
+|           CPI           |    0.3413 |
+|       DP [MFLOP/s]      | 7149.5769 |
+|     AVX DP [MFLOP/s]    | 7148.0724 |
+|   AVX512 DP [MFLOP/s]   |         0 |
+|     Packed [MUOPS/s]    | 1787.0181 |
+|     Scalar [MUOPS/s]    |    1.5045 |
+| Vectorization ratio [%] |   99.9159 |
++-------------------------+-----------+
+

@@ -1,0 +1,32 @@
+2025-04-10 15:48:42 - 
+2025-04-10 15:48:42 - =========================( Parsing command line arguments )=========================
+2025-04-10 15:48:42 - 
+2025-04-10 15:48:42 - All paths relative to input file subdirectory <../tests/perf/lb/scenario/guo/>
+2025-04-10 15:48:42 - Input file = <../tests/perf/lb/scenario/guo/input_1core>
+2025-04-10 15:48:42 - File tag = <default>
+2025-04-10 15:48:42 - From now on logging to file <LOG_1core>
+Region: add_source_term_pop_guo_CASE1_LOOP2
+Group: 1
++-----------------------------+---------+------------+
+|            Event            | Counter |  f0402:0:0 |
++-----------------------------+---------+------------+
+|     Runtime (RDTSC) [s]     |   TSC   |   0.583737 |
+|         Region calls        |   CTR   |        200 |
+|      INSTR_RETIRED_ANY      |  FIXC0  | 4098048000 |
+|    CPU_CLK_UNHALTED_CORE    |  FIXC1  | 1395758000 |
+|     CPU_CLK_UNHALTED_REF    |  FIXC2  | 1395762000 |
+|        TOPDOWN_SLOTS        |  FIXC3  | 6978789000 |
+|  MEM_INST_RETIRED_ALL_LOADS |   PMC0  | 2197691000 |
+| MEM_INST_RETIRED_ALL_STORES |   PMC1  |  304037000 |
++-----------------------------+---------+------------+
+
++----------------------+-----------+
+|        Metric        | f0402:0:0 |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.5837 |
+| Runtime unhalted [s] |    0.5829 |
+|      Clock [MHz]     | 2394.3129 |
+|          CPI         |    0.3406 |
+|  Load to store ratio |    7.2284 |
++----------------------+-----------+
+

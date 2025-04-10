@@ -1,0 +1,43 @@
+2025-04-10 15:50:07 - 
+2025-04-10 15:50:07 - =========================( Parsing command line arguments )=========================
+2025-04-10 15:50:07 - 
+2025-04-10 15:50:07 - All paths relative to input file subdirectory <../tests/perf/lb/scenario/guo/>
+2025-04-10 15:50:07 - Input file = <../tests/perf/lb/scenario/guo/input_1core>
+2025-04-10 15:50:07 - File tag = <default>
+2025-04-10 15:50:07 - From now on logging to file <LOG_1core>
+Region: add_source_term_pop_guo_CASE1_LOOP2
+Group: 1
++-------------------------+---------+------------+
+|          Event          | Counter |  f0402:0:0 |
++-------------------------+---------+------------+
+|   Runtime (RDTSC) [s]   |   TSC   |   0.584339 |
+|       Region calls      |   CTR   |        200 |
+|    INSTR_RETIRED_ANY    |  FIXC0  | 4098086000 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  | 1396433000 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  | 1396433000 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 6982167000 |
+|     L2_LINES_IN_ALL     |   PMC0  |   25011480 |
+|      L2_TRANS_L2_WB     |   PMC1  |   24471420 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |     539082 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |   24471610 |
++-------------------------+---------+------------+
+
++-----------------------------------+-----------+
+|               Metric              | f0402:0:0 |
++-----------------------------------+-----------+
+|        Runtime (RDTSC) [s]        |    0.5843 |
+|        Runtime unhalted [s]       |    0.5832 |
+|            Clock [MHz]            | 2394.3205 |
+|                CPI                |    0.3408 |
+|    L3 load bandwidth [MBytes/s]   | 2739.3939 |
+|    L3 load data volume [GBytes]   |    1.6007 |
+|   L3 evict bandwidth [MBytes/s]   | 2680.2644 |
+|   L3 evict data volume [GBytes]   |    1.5662 |
+| L3|MEM evict bandwidth [MBytes/s] | 2680.2436 |
+| L3|MEM evict data volume [GBytes] |    1.5662 |
+|  Dropped CLs bandwidth [MBytes/s] |   59.0432 |
+|  Dropped CLs data volume [GBytes] |    0.0345 |
+|      L3 bandwidth [MBytes/s]      | 5419.6376 |
+|      L3 data volume [GBytes]      |    3.1669 |
++-----------------------------------+-----------+
+

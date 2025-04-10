@@ -1,0 +1,38 @@
+2025-04-10 15:49:29 - 
+2025-04-10 15:49:29 - =========================( Parsing command line arguments )=========================
+2025-04-10 15:49:29 - 
+2025-04-10 15:49:29 - All paths relative to input file subdirectory <../tests/perf/lb/scenario/guo/>
+2025-04-10 15:49:29 - Input file = <../tests/perf/lb/scenario/guo/input_1core>
+2025-04-10 15:49:29 - File tag = <default>
+2025-04-10 15:49:29 - From now on logging to file <LOG_1core>
+Region: add_source_term_pop_guo_CASE1_LOOP2
+Group: 1
++-----------------------+---------+------------+
+|         Event         | Counter |  f0402:0:0 |
++-----------------------+---------+------------+
+|  Runtime (RDTSC) [s]  |   TSC   |   0.586343 |
+|      Region calls     |   CTR   |        200 |
+|   INSTR_RETIRED_ANY   |  FIXC0  | 4098067000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 1401813000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 1401815000 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 7009064000 |
+|    L1D_REPLACEMENT    |   PMC0  |   34893280 |
+|    L2_TRANS_L1D_WB    |   PMC1  |   28809840 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |     174774 |
++-----------------------+---------+------------+
+
++--------------------------------+-----------+
+|             Metric             | f0402:0:0 |
++--------------------------------+-----------+
+|       Runtime (RDTSC) [s]      |    0.5863 |
+|      Runtime unhalted [s]      |    0.5855 |
+|           Clock [MHz]          | 2394.3156 |
+|               CPI              |    0.3421 |
+|  L2D load bandwidth [MBytes/s] | 3808.6409 |
+|  L2D load data volume [GBytes] |    2.2332 |
+| L2D evict bandwidth [MBytes/s] | 3144.6265 |
+| L2D evict data volume [GBytes] |    1.8438 |
+|     L2 bandwidth [MBytes/s]    | 6972.3442 |
+|     L2 data volume [GBytes]    |    4.0882 |
++--------------------------------+-----------+
+
