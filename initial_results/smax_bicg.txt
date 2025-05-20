@@ -1,0 +1,70 @@
+[1;34m[pthread wrapper] 
+[0m[1;34m[pthread wrapper] MAIN -> 0
+[0m[1;34m[pthread wrapper] PIN_MASK: [0m[1;34m0->1  [0m[1;34m1->2  [0m[1;34m2->3  [0m[1;34m3->4  [0m[1;34m4->5  [0m[1;34m5->6  [0m[1;34m6->7  [0m[1;34m7->8  [0m[1;34m8->9  [0m[1;34m9->10  [0m[1;34m10->11  [0m[1;34m11->12  [0m[1;34m12->13  [0m[1;34m13->14  [0m[1;34m14->15  [0m[1;34m15->16  [0m[1;34m16->17  [0m[1;34m17->18  [0m[1;34m18->19  [0m[1;34m19->20  [0m[1;34m20->21  [0m[1;34m21->22  [0m[1;34m22->23  [0m[1;34m23->24  [0m[1;34m24->25  [0m[1;34m25->26  [0m[1;34m26->27  [0m[1;34m27->28  [0m[1;34m28->29  [0m[1;34m29->30  [0m[1;34m30->31  [0m[1;34m31->32  [0m[1;34m32->33  [0m[1;34m33->34  [0m[1;34m34->35  [0m[1;34m
+[pthread wrapper] SKIP MASK: 0x0
+[0m[1;34m	threadid 23218920994560 -> hwthread 1 - OK[0m[1;34m
+[0m[1;34m	threadid 23218918893312 -> hwthread 2 - OK[0m[1;34m
+[0m[1;34m	threadid 23218916792064 -> hwthread 3 - OK[0m[1;34m
+[0m[1;34m	threadid 23217891272448 -> hwthread 4 - OK[0m[1;34m
+[0m[1;34m	threadid 23217889171200 -> hwthread 5 - OK[0m[1;34m
+[0m[1;34m	threadid 23217887069952 -> hwthread 6 - OK[0m[1;34m
+[0m[1;34m	threadid 23217884968704 -> hwthread 7 - OK[0m[1;34m
+[0m[1;34m	threadid 23217882867456 -> hwthread 8 - OK[0m[1;34m
+[0m[1;34m	threadid 23217880766208 -> hwthread 9 - OK[0m[1;34m
+[0m[1;34m	threadid 23217878664960 -> hwthread 10 - OK[0m[1;34m
+[0m[1;34m	threadid 23217876563712 -> hwthread 11 - OK[0m[1;34m
+[0m[1;34m	threadid 23217874462464 -> hwthread 12 - OK[0m[1;34m
+[0m[1;34m	threadid 23217872361216 -> hwthread 13 - OK[0m[1;34m
+[0m[1;34m	threadid 23217870259968 -> hwthread 14 - OK[0m[1;34m
+[0m[1;34m	threadid 23217868158720 -> hwthread 15 - OK[0m[1;34m
+[0m[1;34m	threadid 23217866057472 -> hwthread 16 - OK[0m[1;34m
+[0m[1;34m	threadid 23217863956224 -> hwthread 17 - OK[0m[1;34m
+[0m[1;34m	threadid 23217861854976 -> hwthread 18 - OK[0m[1;34m
+[0m[1;34m	threadid 23217859753728 -> hwthread 19 - OK[0m[1;34m
+[0m[1;34m	threadid 23217857652480 -> hwthread 20 - OK[0m[1;34m
+[0m[1;34m	threadid 23217855551232 -> hwthread 21 - OK[0m[1;34m
+[0m[1;34m	threadid 23217853449984 -> hwthread 22 - OK[0m[1;34m
+[0m[1;34m	threadid 23217851348736 -> hwthread 23 - OK[0m[1;34m
+[0m[1;34m	threadid 23217849247488 -> hwthread 24 - OK[0m[1;34m
+[0m[1;34m	threadid 23217847146240 -> hwthread 25 - OK[0m[1;34m
+[0m[1;34m	threadid 23217845044992 -> hwthread 26 - OK[0m[1;34m
+[0m[1;34m	threadid 23217842943744 -> hwthread 27 - OK[0m[1;34m
+[0m[1;34m	threadid 23217840842496 -> hwthread 28 - OK[0m[1;34m
+[0m[1;34m	threadid 23217838741248 -> hwthread 29 - OK[0m[1;34m
+[0m[1;34m	threadid 23217836640000 -> hwthread 30 - OK[0m[1;34m
+[0m[1;34m	threadid 23217834538752 -> hwthread 31 - OK[0m[1;34m
+[0m[1;34m	threadid 23217832437504 -> hwthread 32 - OK[0m[1;34m
+[0m[1;34m	threadid 23217830336256 -> hwthread 33 - OK[0m[1;34m
+[0m[1;34m	threadid 23217828235008 -> hwthread 34 - OK[0m[1;34m
+[0m[1;34m	threadid 23217826133760 -> hwthread 35 - OK[0m[1;34m
+[0m
+               Residual Norms                           Time for iteration
++------------------------------------------+        +-------------------------+
+||A*x_0 - b||_infty = 1.0000000000000000e+00
+||A*x_10 - b||_infty = 2.4425759884266898e-02        2.8693000000000000e-02[s]
+||A*x_20 - b||_infty = 3.4419582921082310e-04        2.8750999999999999e-02[s]
+||A*x_30 - b||_infty = 5.1644774523677421e-06        2.8783999999999997e-02[s]
+||A*x_40 - b||_infty = 8.6484827804435215e-08        2.8763000000000000e-02[s]
+||A*x_50 - b||_infty = 6.6763848457696955e-11        2.8766000000000000e-02[s]
+||A*x_60 - b||_infty = 4.9293902293356950e-14        2.8749999999999998e-02[s]
+
+Solver: bicgstab converged in: 60 iterations.
+With the stopping criteria "tol * ||Ax_0 - b||_infty" is: 5.0000000000000002e-14
+The residual of the final iteration is: ||A*x_star - b||_infty = 6.6763848457696955e-11.
+USE_TIMERS is disabled in SMAX. No timers collected.
+
++---------------------------------------------------------+
+Total elapsed time:                           2.062e+01[s]
+| Preprocessing time:                         1.906e+01[s]
+| Solve time:                                 1.551e+00[s]
+| | Iterate time:                             1.516e+00[s]
+| | | SpMV time:                              1.126e+00[s]
+| | | Precond. time:                          2.520e-01[s]
+| | | Dot time:                               4.495e-02[s]
+| | | Sum time:                               9.271e-02[s]
+| | Sample time:                              2.130e-02[s]
+| | Exchange time:                            4.000e-05[s]
+| | Save x* time:                             1.315e-02[s]
+| Postprocessing time:                        5.010e-04[s]
++---------------------------------------------------------+
+

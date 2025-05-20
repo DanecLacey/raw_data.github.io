@@ -1,0 +1,73 @@
+[1;34m[pthread wrapper] 
+[0m[1;34m[pthread wrapper] MAIN -> 0
+[0m[1;34m[pthread wrapper] PIN_MASK: [0m[1;34m0->1  [0m[1;34m1->2  [0m[1;34m2->3  [0m[1;34m3->4  [0m[1;34m4->5  [0m[1;34m5->6  [0m[1;34m6->7  [0m[1;34m7->8  [0m[1;34m8->9  [0m[1;34m9->10  [0m[1;34m10->11  [0m[1;34m11->12  [0m[1;34m12->13  [0m[1;34m13->14  [0m[1;34m14->15  [0m[1;34m15->16  [0m[1;34m16->17  [0m[1;34m17->18  [0m[1;34m18->19  [0m[1;34m19->20  [0m[1;34m20->21  [0m[1;34m21->22  [0m[1;34m22->23  [0m[1;34m23->24  [0m[1;34m24->25  [0m[1;34m25->26  [0m[1;34m26->27  [0m[1;34m27->28  [0m[1;34m28->29  [0m[1;34m29->30  [0m[1;34m30->31  [0m[1;34m31->32  [0m[1;34m32->33  [0m[1;34m33->34  [0m[1;34m34->35  [0m[1;34m
+[pthread wrapper] SKIP MASK: 0x0
+[0m[1;34m	threadid 22380111705856 -> hwthread 1 - OK[0m[1;34m
+[0m[1;34m	threadid 22380109604608 -> hwthread 2 - OK[0m[1;34m
+[0m[1;34m	threadid 22380107503360 -> hwthread 3 - OK[0m[1;34m
+[0m[1;34m	threadid 22379182671616 -> hwthread 4 - OK[0m[1;34m
+[0m[1;34m	threadid 22379180570368 -> hwthread 5 - OK[0m[1;34m
+[0m[1;34m	threadid 22379178469120 -> hwthread 6 - OK[0m[1;34m
+[0m[1;34m	threadid 22379176367872 -> hwthread 7 - OK[0m[1;34m
+[0m[1;34m	threadid 22379174266624 -> hwthread 8 - OK[0m[1;34m
+[0m[1;34m	threadid 22379172165376 -> hwthread 9 - OK[0m[1;34m
+[0m[1;34m	threadid 22379170064128 -> hwthread 10 - OK[0m[1;34m
+[0m[1;34m	threadid 22379167962880 -> hwthread 11 - OK[0m[1;34m
+[0m[1;34m	threadid 22379165861632 -> hwthread 12 - OK[0m[1;34m
+[0m[1;34m	threadid 22379163760384 -> hwthread 13 - OK[0m[1;34m
+[0m[1;34m	threadid 22379161659136 -> hwthread 14 - OK[0m[1;34m
+[0m[1;34m	threadid 22379159557888 -> hwthread 15 - OK[0m[1;34m
+[0m[1;34m	threadid 22379157456640 -> hwthread 16 - OK[0m[1;34m
+[0m[1;34m	threadid 22379155355392 -> hwthread 17 - OK[0m[1;34m
+[0m[1;34m	threadid 22379153254144 -> hwthread 18 - OK[0m[1;34m
+[0m[1;34m	threadid 22379151152896 -> hwthread 19 - OK[0m[1;34m
+[0m[1;34m	threadid 22379149051648 -> hwthread 20 - OK[0m[1;34m
+[0m[1;34m	threadid 22379146950400 -> hwthread 21 - OK[0m[1;34m
+[0m[1;34m	threadid 22379144849152 -> hwthread 22 - OK[0m[1;34m
+[0m[1;34m	threadid 22379142747904 -> hwthread 23 - OK[0m[1;34m
+[0m[1;34m	threadid 22379140646656 -> hwthread 24 - OK[0m[1;34m
+[0m[1;34m	threadid 22379138545408 -> hwthread 25 - OK[0m[1;34m
+[0m[1;34m	threadid 22379136444160 -> hwthread 26 - OK[0m[1;34m
+[0m[1;34m	threadid 22379134342912 -> hwthread 27 - OK[0m[1;34m
+[0m[1;34m	threadid 22379132241664 -> hwthread 28 - OK[0m[1;34m
+[0m[1;34m	threadid 22379130140416 -> hwthread 29 - OK[0m[1;34m
+[0m[1;34m	threadid 22379128039168 -> hwthread 30 - OK[0m[1;34m
+[0m[1;34m	threadid 22379125937920 -> hwthread 31 - OK[0m[1;34m
+[0m[1;34m	threadid 22379123836672 -> hwthread 32 - OK[0m[1;34m
+[0m[1;34m	threadid 22379121735424 -> hwthread 33 - OK[0m[1;34m
+[0m[1;34m	threadid 22379119634176 -> hwthread 34 - OK[0m[1;34m
+[0m[1;34m	threadid 22379117532928 -> hwthread 35 - OK[0m[1;34m
+[0m
+               Residual Norms                           Time for iteration
++------------------------------------------+        +-------------------------+
+||A*x_0 - b||_infty = 1.0000000000000000e+00
+||A*x_10 - b||_infty = 4.2527398293025320e-01        1.9896000000000000e-02[s]
+||A*x_20 - b||_infty = 1.4615386568919432e-02        1.9727999999999999e-02[s]
+||A*x_30 - b||_infty = 4.9258543560180585e-04        2.0043999999999999e-02[s]
+||A*x_40 - b||_infty = 1.7561825260961798e-05        1.9878000000000000e-02[s]
+||A*x_50 - b||_infty = 5.6070794258635559e-07        1.9764000000000000e-02[s]
+||A*x_60 - b||_infty = 1.1594030941528976e-08        1.9831999999999999e-02[s]
+||A*x_70 - b||_infty = 1.7592594670305785e-10        1.9892000000000000e-02[s]
+||A*x_80 - b||_infty = 5.4325281973680654e-12        2.0378000000000000e-02[s]
+||A*x_90 - b||_infty = 1.7147253516188009e-13        1.9996000000000000e-02[s]
+||A*x_100 - b||_infty = 3.6637359812630166e-14        2.0060999999999999e-02[s]
+
+Solver: conjugate-gradient converged in: 100 iterations.
+With the stopping criteria "tol * ||Ax_0 - b||_infty" is: 5.0000000000000002e-14
+The residual of the final iteration is: ||A*x_star - b||_infty = 1.7147253516188009e-13.
+
++---------------------------------------------------------+
+Total elapsed time:                           2.098e+01[s]
+| Preprocessing time:                         1.929e+01[s]
+| Solve time:                                 1.684e+00[s]
+| | Iterate time:                             1.631e+00[s]
+| | | SpMV time:                              1.303e+00[s]
+| | | Precond. time:                          2.151e-01[s]
+| | | Dot time:                               5.401e-02[s]
+| | | Sum time:                               5.888e-02[s]
+| | Sample time:                              3.591e-02[s]
+| | Exchange time:                            3.400e-05[s]
+| | Save x* time:                             1.695e-02[s]
+| Postprocessing time:                        6.260e-04[s]
++---------------------------------------------------------+
+

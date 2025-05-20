@@ -1,0 +1,70 @@
+[1;34m[pthread wrapper] 
+[0m[1;34m[pthread wrapper] MAIN -> 0
+[0m[1;34m[pthread wrapper] PIN_MASK: [0m[1;34m0->1  [0m[1;34m1->2  [0m[1;34m2->3  [0m[1;34m3->4  [0m[1;34m4->5  [0m[1;34m5->6  [0m[1;34m6->7  [0m[1;34m7->8  [0m[1;34m8->9  [0m[1;34m9->10  [0m[1;34m10->11  [0m[1;34m11->12  [0m[1;34m12->13  [0m[1;34m13->14  [0m[1;34m14->15  [0m[1;34m15->16  [0m[1;34m16->17  [0m[1;34m17->18  [0m[1;34m18->19  [0m[1;34m19->20  [0m[1;34m20->21  [0m[1;34m21->22  [0m[1;34m22->23  [0m[1;34m23->24  [0m[1;34m24->25  [0m[1;34m25->26  [0m[1;34m26->27  [0m[1;34m27->28  [0m[1;34m28->29  [0m[1;34m29->30  [0m[1;34m30->31  [0m[1;34m31->32  [0m[1;34m32->33  [0m[1;34m33->34  [0m[1;34m34->35  [0m[1;34m
+[pthread wrapper] SKIP MASK: 0x0
+[0m[1;34m	threadid 22987410605824 -> hwthread 1 - OK[0m[1;34m
+[0m[1;34m	threadid 22987408504576 -> hwthread 2 - OK[0m[1;34m
+[0m[1;34m	threadid 22987406403328 -> hwthread 3 - OK[0m[1;34m
+[0m[1;34m	threadid 22986380883712 -> hwthread 4 - OK[0m[1;34m
+[0m[1;34m	threadid 22986378782464 -> hwthread 5 - OK[0m[1;34m
+[0m[1;34m	threadid 22986376681216 -> hwthread 6 - OK[0m[1;34m
+[0m[1;34m	threadid 22986374579968 -> hwthread 7 - OK[0m[1;34m
+[0m[1;34m	threadid 22986372478720 -> hwthread 8 - OK[0m[1;34m
+[0m[1;34m	threadid 22986370377472 -> hwthread 9 - OK[0m[1;34m
+[0m[1;34m	threadid 22986368276224 -> hwthread 10 - OK[0m[1;34m
+[0m[1;34m	threadid 22986366174976 -> hwthread 11 - OK[0m[1;34m
+[0m[1;34m	threadid 22986364073728 -> hwthread 12 - OK[0m[1;34m
+[0m[1;34m	threadid 22986361972480 -> hwthread 13 - OK[0m[1;34m
+[0m[1;34m	threadid 22986359871232 -> hwthread 14 - OK[0m[1;34m
+[0m[1;34m	threadid 22986357769984 -> hwthread 15 - OK[0m[1;34m
+[0m[1;34m	threadid 22986355668736 -> hwthread 16 - OK[0m[1;34m
+[0m[1;34m	threadid 22986353567488 -> hwthread 17 - OK[0m[1;34m
+[0m[1;34m	threadid 22986351466240 -> hwthread 18 - OK[0m[1;34m
+[0m[1;34m	threadid 22986349364992 -> hwthread 19 - OK[0m[1;34m
+[0m[1;34m	threadid 22986347263744 -> hwthread 20 - OK[0m[1;34m
+[0m[1;34m	threadid 22986345162496 -> hwthread 21 - OK[0m[1;34m
+[0m[1;34m	threadid 22986343061248 -> hwthread 22 - OK[0m[1;34m
+[0m[1;34m	threadid 22986340960000 -> hwthread 23 - OK[0m[1;34m
+[0m[1;34m	threadid 22986338858752 -> hwthread 24 - OK[0m[1;34m
+[0m[1;34m	threadid 22986336757504 -> hwthread 25 - OK[0m[1;34m
+[0m[1;34m	threadid 22986334656256 -> hwthread 26 - OK[0m[1;34m
+[0m[1;34m	threadid 22986332555008 -> hwthread 27 - OK[0m[1;34m
+[0m[1;34m	threadid 22986330453760 -> hwthread 28 - OK[0m[1;34m
+[0m[1;34m	threadid 22986328352512 -> hwthread 29 - OK[0m[1;34m
+[0m[1;34m	threadid 22986326251264 -> hwthread 30 - OK[0m[1;34m
+[0m[1;34m	threadid 22986324150016 -> hwthread 31 - OK[0m[1;34m
+[0m[1;34m	threadid 22986322048768 -> hwthread 32 - OK[0m[1;34m
+[0m[1;34m	threadid 22986319947520 -> hwthread 33 - OK[0m[1;34m
+[0m[1;34m	threadid 22986317846272 -> hwthread 34 - OK[0m[1;34m
+[0m[1;34m	threadid 22986315745024 -> hwthread 35 - OK[0m[1;34m
+[0m
+               Residual Norms                           Time for iteration
++------------------------------------------+        +-------------------------+
+||A*x_0 - b||_infty = 1.0000000000000000e+00
+||A*x_10 - b||_infty = 2.4425759880995754e-02        3.6053000000000002e-02[s]
+||A*x_20 - b||_infty = 3.4419596920591420e-04        3.6094999999999995e-02[s]
+||A*x_30 - b||_infty = 5.1657643256271405e-06        3.6219999999999995e-02[s]
+||A*x_40 - b||_infty = 8.5261179698612578e-08        3.6049999999999999e-02[s]
+||A*x_50 - b||_infty = 1.0039241148119206e-10        3.6095999999999996e-02[s]
+||A*x_60 - b||_infty = 1.3353332119182804e-13        3.6037000000000000e-02[s]
+||A*x_70 - b||_infty = 5.1514348342607263e-14        3.6034999999999998e-02[s]
+
+Solver: bicgstab converged in: 70 iterations.
+With the stopping criteria "tol * ||Ax_0 - b||_infty" is: 5.0000000000000002e-14
+The residual of the final iteration is: ||A*x_star - b||_infty = 1.3353332119182804e-13.
+
++---------------------------------------------------------+
+Total elapsed time:                           2.149e+01[s]
+| Preprocessing time:                         1.916e+01[s]
+| Solve time:                                 2.322e+00[s]
+| | Iterate time:                             2.281e+00[s]
+| | | SpMV time:                              1.827e+00[s]
+| | | Precond. time:                          2.912e-01[s]
+| | | Dot time:                               5.329e-02[s]
+| | | Sum time:                               1.091e-01[s]
+| | Sample time:                              2.481e-02[s]
+| | Exchange time:                            2.700e-05[s]
+| | Save x* time:                             1.684e-02[s]
+| Postprocessing time:                        3.230e-04[s]
++---------------------------------------------------------+
+
